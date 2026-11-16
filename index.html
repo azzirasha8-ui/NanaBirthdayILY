@@ -1,0 +1,2371 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FDF8F0" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧸</text></svg>" />
+  <title>Happy 20YO Birthday, Lana Raynaud 🧸🤍</title>
+  <script>document.documentElement.className += " js-ok";</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+          },
+          colors: {
+            cream: {
+              50: '#FFFDF9',
+              100: '#FDF8F0',
+              200: '#F7EFE1',
+              300: '#EFE2CD',
+            },
+            latte: {
+              200: '#EBD9C3',
+              300: '#DEC2A2',
+              400: '#C8A37E',
+              500: '#A67C52',
+              600: '#845E3A',
+              700: '#654528',
+              800: '#47301B',
+              900: '#2E1E10',
+            },
+            blush: {
+              50: '#FFF6F7',
+              100: '#FDECEF',
+              200: '#F9D6DC',
+              300: '#F2B8C3',
+              400: '#E48D9F',
+              500: '#CC687D',
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* Ultra-lightweight, zero-lag styling with GPU-only transforms */
+    body {
+      background-color: #FDF8F0;
+      background-image:
+        radial-gradient(at 15% 10%, rgba(249, 214, 220, 0.32) 0px, transparent 50%),
+        radial-gradient(at 85% 25%, rgba(235, 217, 195, 0.35) 0px, transparent 50%),
+        radial-gradient(at 50% 85%, rgba(249, 214, 220, 0.25) 0px, transparent 55%);
+      color: #47301B;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Cozy Soft Card without heavy backdrop-blur repaints */
+    .cozy-card {
+      background: rgba(255, 253, 249, 0.92);
+      border: 1px solid rgba(222, 194, 162, 0.55);
+      box-shadow: 0 10px 28px -10px rgba(132, 94, 58, 0.12), 0 2px 6px -1px rgba(132, 94, 58, 0.05);
+    }
+
+    .cozy-pill {
+      background: #FFF6F7;
+      border: 1px solid #F9D6DC;
+      box-shadow: 0 2px 8px rgba(204, 104, 125, 0.08);
+    }
+
+    /* Fix: shadow-xs / shadow-2xs only exist in Tailwind v4 */
+    .shadow-xs, .shadow-2xs { box-shadow: 0 1px 2px rgba(132, 94, 58, 0.12); }
+
+    /* Subtle GPU-composited floating animations */
+    @keyframes gentleFloat {
+      0%, 100% { transform: translate3d(0, 0, 0); }
+      50% { transform: translate3d(0, -6px, 0); }
+    }
+    .float-slow {
+      animation: gentleFloat 4.2s ease-in-out infinite;
+      will-change: transform;
+    }
+
+    /* Animated Teddy & Bunny Cuddle Hug Motion */
+    @keyframes teddyHugLean {
+      0%, 100% { transform: translate3d(0, 0, 0) rotate(-2deg); }
+      50% { transform: translate3d(7px, -2px, 0) rotate(5deg); }
+    }
+    @keyframes bunnyHugLean {
+      0%, 100% { transform: translate3d(0, 0, 0) rotate(2deg); }
+      50% { transform: translate3d(-7px, -2px, 0) rotate(-5deg); }
+    }
+    @keyframes cuddleHeartPop {
+      0%, 100% { transform: scale(0.92) translateY(0); opacity: 0.78; }
+      50% { transform: scale(1.16) translateY(-5px); opacity: 1; }
+    }
+    @keyframes tightHugSqueeze {
+      0% { transform: scale(1); }
+      40% { transform: scale(1.07); }
+      100% { transform: scale(1); }
+    }
+    .teddy-cuddle-anim {
+      transform-origin: center bottom;
+      animation: teddyHugLean 2.8s ease-in-out infinite;
+      will-change: transform;
+    }
+    .bunny-cuddle-anim {
+      transform-origin: center bottom;
+      animation: bunnyHugLean 2.8s ease-in-out infinite;
+      will-change: transform;
+    }
+    .cuddle-heart-anim {
+      transform-origin: center;
+      animation: cuddleHeartPop 2.8s ease-in-out infinite;
+      will-change: transform, opacity;
+    }
+    .cuddle-squeeze-active {
+      animation: tightHugSqueeze 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    @keyframes candleFlicker {
+      0%, 100% { transform: scale(1) rotate(-1deg); opacity: 0.95; }
+      50% { transform: scale(1.08, 0.94) rotate(1.5deg); opacity: 1; }
+    }
+    .flame-anim {
+      transform-origin: bottom center;
+      animation: candleFlicker 1.6s ease-in-out infinite;
+      will-change: transform, opacity;
+      transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+    .flame-extinguished {
+      opacity: 0 !important;
+      transform: scale(0.1) translateY(6px) !important;
+      animation: none !important;
+    }
+
+    @keyframes smokeCurl {
+      0% {
+        opacity: 0;
+        transform: translateY(4px) scale(0.6);
+      }
+      25% {
+        opacity: 0.75;
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-22px) translateX(6px) scale(1.35);
+      }
+    }
+    .smoke-puff {
+      opacity: 0;
+      pointer-events: none;
+    }
+    .smoke-rising {
+      animation: smokeCurl 1.8s ease-out forwards;
+    }
+
+    /* Music equalizer bars */
+    @keyframes eqBounce {
+      0%, 100% { transform: scaleY(0.35); }
+      50% { transform: scaleY(1); }
+    }
+    .eq-bar {
+      transform-origin: bottom;
+      animation: eqBounce 0.8s ease-in-out infinite;
+    }
+    .eq-paused .eq-bar {
+      animation-play-state: paused;
+      transform: scaleY(0.35);
+    }
+
+    /* Sing Along vinyl record */
+    .vinyl {
+      width: 132px;
+      height: 132px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: repeating-radial-gradient(circle, #47301B 0 2px, #654528 2px 4px);
+      box-shadow: 0 12px 24px -8px rgba(71, 48, 27, 0.45);
+      animation: spinVinyl 7s linear infinite;
+    }
+    .vinyl-label {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #F2B8C3;
+      border: 3px solid #FFFDF9;
+      font-size: 20px;
+    }
+    @keyframes spinVinyl { to { transform: rotate(360deg); } }
+
+    /* Accessibility */
+    :focus-visible { outline: 2px solid #CC687D; outline-offset: 2px; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+/* ===== Modern + cute layer ===== */
+    main { position: relative; z-index: 1; }
+    .cozy-card {
+      background: linear-gradient(180deg, rgba(255,253,249,.97), rgba(255,247,248,.93));
+      transition: translate .3s ease, box-shadow .3s ease;
+    }
+    .cozy-card:hover {
+      translate: 0 -3px;
+      box-shadow: 0 18px 36px -14px rgba(204,104,125,.22), 0 2px 6px -1px rgba(132,94,58,.06);
+    }
+    .js-ok main > section, .js-ok main > footer {
+      opacity: 0; transform: translateY(18px);
+      transition: opacity .7s ease, transform .7s ease, translate .3s ease, box-shadow .3s ease;
+    }
+    .js-ok main > section.in, .js-ok main > footer.in { opacity: 1; transform: none; }
+    h1 .italic {
+      background: linear-gradient(90deg,#CC687D,#E48D9F,#DEC2A2,#CC687D);
+      background-size: 200% auto; -webkit-background-clip: text; background-clip: text;
+      -webkit-text-fill-color: transparent; animation: shimmerText 6s linear infinite;
+    }
+    @keyframes shimmerText { to { background-position: 200% center; } }
+    button.bg-blush-500, a.bg-blush-500 { position: relative; overflow: hidden; }
+    button.bg-blush-500::after, a.bg-blush-500::after {
+      content: ''; position: absolute; top: 0; left: -60%; width: 40%; height: 100%;
+      background: linear-gradient(100deg, transparent, rgba(255,255,255,.45), transparent);
+      transform: skewX(-20deg); animation: btnShine 3.6s ease-in-out infinite;
+    }
+    @keyframes btnShine { 0%, 60% { left: -60%; } 100% { left: 130%; } }
+    .bg-floaters { position: fixed; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }
+    .bg-floaters span { position: absolute; bottom: -40px; opacity: 0; animation: floatUp linear infinite; }
+    @keyframes floatUp {
+      0% { transform: translateY(0) rotate(0); opacity: 0; }
+      10%, 90% { opacity: .5; }
+      100% { transform: translateY(-110vh) rotate(40deg); opacity: 0; }
+    }
+
+    /* ===== Button surprises ===== */
+    .burst-emoji { position: fixed; z-index: 70; pointer-events: none; animation: burstFly 1.2s ease-out forwards; }
+    @keyframes burstFly {
+      0% { opacity: 0; transform: translate(-50%,-50%) scale(.3); }
+      15% { opacity: 1; }
+      100% { opacity: 0; transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) rotate(var(--rot)) scale(1.1); }
+    }
+    #surpriseBubble {
+      position: fixed; z-index: 70; pointer-events: none; max-width: 260px; padding: 8px 14px;
+      border-radius: 9999px; background: #fff; border: 1px solid #F9D6DC; color: #654528;
+      font-size: 12px; font-weight: 600; box-shadow: 0 8px 22px -8px rgba(204,104,125,.45);
+      opacity: 0; transform: translateY(8px) scale(.9); transition: opacity .25s, transform .25s;
+    }
+    #surpriseBubble.show { opacity: 1; transform: translateY(0) scale(1); }
+    #surpriseModal {
+      position: fixed; inset: 0; z-index: 80; display: none; align-items: center; justify-content: center;
+      padding: 16px; background: rgba(46,30,16,.6);
+    }
+    #surpriseModal.open { display: flex; }
+    .surprise-card {
+      width: 100%; max-width: 340px; text-align: center; padding: 28px 24px; border-radius: 28px;
+      background: linear-gradient(180deg,#FFFDF9,#FDECEF); border: 1px solid #F9D6DC;
+      animation: popIn .5s cubic-bezier(.34,1.56,.64,1);
+    }
+    @keyframes popIn { from { transform: scale(.6) rotate(-4deg); opacity: 0; } to { transform: none; opacity: 1; } }
+
+/* ===== Smoke, gift & jacket ===== */
+    .smoke-blob { fill: #B8A99A; opacity: 0; filter: blur(1px); transform-box: fill-box; transform-origin: center; animation: smokeBlob 2s ease-out forwards; }
+    @keyframes smokeBlob {
+      0% { opacity: 0; transform: translate(0,0) scale(.5); }
+      20% { opacity: .75; }
+      100% { opacity: 0; transform: translate(var(--sx), -46px) scale(3.2); }
+    }
+    .gift-shake { animation: giftShake .9s ease-in-out; }
+    @keyframes giftShake {
+      0%,100% { transform: rotate(0) scale(1); }
+      15% { transform: rotate(-14deg) scale(1.15); } 30% { transform: rotate(12deg) scale(1.2); }
+      45% { transform: rotate(-10deg) scale(1.25); } 60% { transform: rotate(8deg) scale(1.3); }
+      80% { transform: rotate(0) scale(1.45); opacity: .8; }
+    }
+    .jacket-art { animation: jacketPop .9s cubic-bezier(.34,1.56,.64,1); }
+    @keyframes jacketPop { from { transform: scale(.2) rotate(-12deg); opacity: 0; } to { transform: none; opacity: 1; } }
+    .jacket-sway { transform-origin: center bottom; animation: jacketSway 3.2s ease-in-out infinite; }
+    @keyframes jacketSway { 0%,100% { transform: rotate(-3deg); } 50% { transform: rotate(3deg) translateY(-4px); } }
+    .twinkle { animation: twinkle 1.6s ease-in-out infinite; }
+    @keyframes twinkle { 0%,100% { transform: scale(.7); opacity: .5; } 50% { transform: scale(1.25); opacity: 1; } }
+
+    /* Custom subtle scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #FDF8F0; }
+    ::-webkit-scrollbar-thumb { background: #DEC2A2; border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #C8A37E; }
+
+    /* Ticket perforated edge effect */
+    .ticket-notch {
+      position: relative;
+    }
+    .ticket-notch::before,
+    .ticket-notch::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 22px;
+      height: 22px;
+      background-color: #FDF8F0;
+      border-radius: 9999px;
+      transform: translateY(-50%);
+      border: 1px solid rgba(222, 194, 162, 0.55);
+    }
+    .ticket-notch::before { left: -12px; }
+    .ticket-notch::after { right: -12px; }
+
+
+    /* Hidden بدوح watermark: 400 DOM marks, intentionally invisible on the page */
+    #baduh-hidden-watermark {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: grid;
+      grid-template-columns: repeat(20, minmax(0, 1fr));
+      grid-template-rows: repeat(20, minmax(0, 1fr));
+      overflow: hidden;
+      opacity: 0;
+      pointer-events: none;
+      user-select: none;
+      visibility: visible;
+      color: #654528;
+    }
+    #baduh-hidden-watermark span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+      font-family: serif;
+      font-size: 12px;
+    }
+    #baduh-hidden-watermark .arabic-watermark-text {
+      grid-column: 1 / -1;
+      white-space: normal;
+      unicode-bidi: plaintext;
+    }
+
+  </style>
+</head>
+<body class="font-sans selection:bg-blush-200 selection:text-latte-800">
+  <!-- Hidden watermark layer: exactly 400 بدوح marks and 11 Arabic text marks; never visible or interactive -->
+  <div id="baduh-hidden-watermark" aria-hidden="true"></div>
+
+
+  <!-- Lightweight Confetti Canvas (only runs briefly when triggered) -->
+  <canvas id="celebrationCanvas" class="fixed inset-0 pointer-events-none z-50"></canvas>
+
+  <!-- Floating Cozy Audio Control Bar -->
+  <div class="sticky top-3 z-40 px-4 max-w-4xl mx-auto">
+    <div class="cozy-card rounded-full px-4 py-2.5 flex items-center justify-between gap-3">
+      <div class="flex items-center gap-2.5 min-w-0">
+        <span class="text-lg select-none" aria-hidden="true">🧸</span>
+        <div class="truncate">
+          <p class="text-xs font-semibold text-latte-700 truncate">For Lana Raynaud · 17 Nov 2026</p>
+          <p class="text-[11px] text-latte-500 truncate">From Azzi Raasha · Turning 20 ✨</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2 shrink-0">
+        <!-- Music Box Toggle -->
+        <button id="musicToggleBtn" type="button" onclick="toggleBirthdayMusic()" aria-pressed="false"
+          class="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blush-100 hover:bg-blush-200 active:scale-95 text-latte-800 text-xs font-semibold transition border border-blush-200">
+          <span id="musicIcon">🎵</span>
+          <span id="musicLabel" class="hidden sm:inline">Play Music Box</span>
+          <span id="eqVisualizer" class="eq-paused flex items-end gap-0.5 h-3 w-3.5" aria-hidden="true">
+            <span class="eq-bar w-0.5 h-full bg-blush-500 rounded-full" style="animation-delay: 0s"></span>
+            <span class="eq-bar w-0.5 h-full bg-blush-500 rounded-full" style="animation-delay: 0.2s"></span>
+            <span class="eq-bar w-0.5 h-full bg-blush-500 rounded-full" style="animation-delay: 0.4s"></span>
+          </span>
+        </button>
+
+        <!-- Sing Along (Apple Music playlist) -->
+        <a href="https://music.apple.com/id/playlist/lana-birthday/pl.u-r2yBBk2tRraxD9A"
+          target="_blank" rel="noopener noreferrer" onclick="pauseMusicBox()"
+          aria-label="Sing along on Apple Music"
+          class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-cream-200 hover:bg-cream-300 active:scale-95 text-latte-800 text-xs font-semibold transition border border-latte-200">
+          <span>🎤</span><span class="hidden sm:inline">Sing</span>
+        </a>
+
+        <!-- Quick Celebrate Button -->
+        <button type="button" onclick="launchCozyConfetti(55)"
+          class="px-3 py-1.5 rounded-full bg-latte-700 hover:bg-latte-800 active:scale-95 text-cream-50 text-xs font-semibold transition">
+          🎉 Wish
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Container -->
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 pt-6 pb-20 space-y-10">
+
+    <!-- 1. HERO & GRAND 20TH BIRTHDAY CAKE -->
+    <section class="cozy-card rounded-3xl p-6 sm:p-10 text-center relative overflow-hidden">
+      <!-- Soft decorative corner sparkles -->
+      <div class="flex justify-center flex-wrap gap-2 mb-4">
+        <span class="cozy-pill px-3.5 py-1 rounded-full text-xs font-semibold text-blush-500 tracking-wide">
+          🎂 Chapter 20 · November 17, 2026
+        </span>
+        <span class="cozy-pill px-3.5 py-1 rounded-full text-xs font-semibold text-latte-600">
+          🧸 Teddy &amp; Bunny Edition 🐰
+        </span>
+      </div>
+
+      <h1 class="font-serif text-4xl sm:text-6xl font-bold text-latte-800 leading-tight tracking-tight">
+        Happy 20th Birthday,<br />
+        <span class="italic text-blush-500">Nanaaaaa</span> 🤍
+      </h1>
+      <p class="mt-2.5 text-sm sm:text-base text-latte-600 max-w-lg mx-auto leading-relaxed">
+        To my sweet Baby, Nanaa &amp; Bibi — celebrating twenty years of your gentle heart, radiant smile, and bright future in Poitiers.
+      </p>
+
+      <!-- LARGE MULTI-TIERED 20TH BIRTHDAY CAKE SVG -->
+      <div class="mt-7 mb-4 flex flex-col items-center">
+        <div class="relative w-full max-w-[360px] sm:max-w-[420px] mx-auto select-none">
+          <svg id="birthdayCakeSvg" viewBox="0 0 420 350" class="w-full h-auto drop-shadow-sm" role="img" aria-label="Grand 20th Birthday Cake with glowing 2 and 0 candles">
+            <defs>
+              <linearGradient id="cakeTierBottom" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#FDECEF" />
+                <stop offset="100%" stop-color="#F5CBD4" />
+              </linearGradient>
+              <linearGradient id="cakeTierMiddle" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#FFFDF9" />
+                <stop offset="100%" stop-color="#F6E8D5" />
+              </linearGradient>
+              <linearGradient id="cakeTierTop" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#FCE4E8" />
+                <stop offset="100%" stop-color="#F2B8C3" />
+              </linearGradient>
+              <linearGradient id="goldStand" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#DEC2A2" />
+                <stop offset="50%" stop-color="#F3E5D0" />
+                <stop offset="100%" stop-color="#C8A37E" />
+              </linearGradient>
+              <radialGradient id="flameGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#FFF3B0" stop-opacity="0.95" />
+                <stop offset="55%" stop-color="#FFB703" stop-opacity="0.55" />
+                <stop offset="100%" stop-color="#FB8500" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+
+            <!-- Soft ambient background aura -->
+            <ellipse cx="210" cy="205" rx="175" ry="120" fill="#FDECEF" opacity="0.45" />
+
+            <!-- Cake Stand Pedestal -->
+            <path d="M165 318 L255 318 L272 336 L148 336 Z" fill="url(#goldStand)" />
+            <rect x="195" y="294" width="30" height="26" rx="6" fill="#C8A37E" />
+            <ellipse cx="210" cy="295" rx="168" ry="16" fill="url(#goldStand)" stroke="#B89068" stroke-width="1.5" />
+            <ellipse cx="210" cy="292" rx="158" ry="11" fill="#FFFDF9" opacity="0.7" />
+
+            <!-- BOTTOM TIER (Large Strawberry Cream Tier) -->
+            <rect x="66" y="222" width="288" height="68" rx="18" fill="url(#cakeTierBottom)" stroke="#E48D9F" stroke-width="1.5" />
+            <!-- Bottom Tier Frosting Drips -->
+            <path d="M66 234 Q82 254 98 236 Q114 258 130 236 Q146 252 162 236 Q178 260 194 236 Q210 254 226 236 Q242 258 258 236 Q274 252 290 236 Q306 256 322 236 Q338 250 354 234 L354 226 Q354 222 340 222 L80 222 Q66 222 66 226 Z" fill="#FFFDF9" />
+            <!-- Bottom Tier Pearl Piping -->
+            <g fill="#FFFDF9" stroke="#E48D9F" stroke-width="1">
+              <circle cx="80" cy="286" r="5" /><circle cx="96" cy="288" r="5" /><circle cx="112" cy="289" r="5" />
+              <circle cx="128" cy="290" r="5" /><circle cx="144" cy="290" r="5" /><circle cx="160" cy="291" r="5" />
+              <circle cx="176" cy="291" r="5" /><circle cx="192" cy="291" r="5" /><circle cx="208" cy="291" r="5" />
+              <circle cx="224" cy="291" r="5" /><circle cx="240" cy="291" r="5" /><circle cx="256" cy="291" r="5" />
+              <circle cx="272" cy="290" r="5" /><circle cx="288" cy="290" r="5" /><circle cx="304" cy="289" r="5" />
+              <circle cx="320" cy="288" r="5" /><circle cx="336" cy="286" r="5" />
+            </g>
+            <!-- Cute Ribbon Bow on Bottom Tier -->
+            <path d="M210 262 C192 248, 178 262, 194 270 C182 276, 194 284, 210 268 C226 284, 238 276, 226 270 C242 262, 228 248, 210 262 Z" fill="#E48D9F" />
+            <circle cx="210" cy="264" r="5" fill="#CC687D" />
+
+            <!-- MIDDLE TIER (Vanilla Latte Tier) -->
+            <rect x="104" y="162" width="212" height="60" rx="16" fill="url(#cakeTierMiddle)" stroke="#DEC2A2" stroke-width="1.5" />
+            <!-- Berry Cream Drips -->
+            <path d="M104 173 Q120 190 136 174 Q152 194 168 174 Q184 188 200 174 Q216 194 232 174 Q248 189 264 174 Q280 192 296 174 Q308 184 316 173 L316 166 Q316 162 304 162 L116 162 Q104 162 104 166 Z" fill="#F9D6DC" />
+            <!-- Decorative Mini Hearts on Middle Tier -->
+            <text x="135" y="206" font-size="13" fill="#E48D9F">🤍</text>
+            <text x="203" y="207" font-size="14" fill="#CC687D">🧸</text>
+            <text x="270" y="206" font-size="13" fill="#E48D9F">🤍</text>
+
+            <!-- TOP TIER (Blush Rose Tier) -->
+            <rect x="142" y="108" width="136" height="54" rx="14" fill="url(#cakeTierTop)" stroke="#E48D9F" stroke-width="1.5" />
+            <!-- White Cream Frosting Top -->
+            <path d="M142 118 Q156 132 170 118 Q184 134 198 118 Q212 132 226 118 Q240 134 254 118 Q266 128 278 118 L278 112 Q278 108 266 108 L154 108 Q142 108 142 112 Z" fill="#FFFDF9" />
+            <!-- "LANA" Plaque on Top Tier -->
+            <rect x="176" y="131" width="68" height="20" rx="10" fill="#FFFDF9" stroke="#DEC2A2" stroke-width="1.2" />
+            <text x="210" y="144" text-anchor="middle" font-family="Cormorant Garamond, serif" font-weight="700" font-size="12" fill="#654528" letter-spacing="1.5">LANA · 20</text>
+
+            <!-- Cute Strawberries & Macarons on Tier Ledges -->
+            <circle cx="88" cy="216" r="8" fill="#E48D9F" />
+            <path d="M84 209 L88 213 L92 209" stroke="#6B8E23" stroke-width="2" fill="none" />
+            <circle cx="332" cy="216" r="8" fill="#E48D9F" />
+            <path d="M328 209 L332 213 L336 209" stroke="#6B8E23" stroke-width="2" fill="none" />
+            <ellipse cx="122" cy="158" rx="9" ry="5" fill="#F2B8C3" />
+            <ellipse cx="298" cy="158" rx="9" ry="5" fill="#F2B8C3" />
+
+            <!-- NUMBER "2" CANDLE -->
+            <g transform="translate(174, 48)">
+              <rect x="12" y="46" width="6" height="14" rx="2" fill="#DEC2A2" />
+              <text x="15" y="48" text-anchor="middle" font-family="Cormorant Garamond, serif" font-weight="700" font-size="52" fill="#FFFDF9" stroke="#CC687D" stroke-width="2.5">2</text>
+              <!-- Candle Wick & Flame 1 -->
+              <line x1="15" y1="6" x2="15" y2="13" stroke="#654528" stroke-width="2" stroke-linecap="round" />
+              <path id="candleSmoke1" class="smoke-puff" d="M15 4 C11 -2, 19 -7, 14 -14" stroke="#B8A99A" stroke-width="2" stroke-linecap="round" fill="none" />
+              <g id="candleFlame1" class="flame-anim">
+                <circle cx="15" cy="-2" r="14" fill="url(#flameGlow)" />
+                <path d="M15 -12 C20 -4, 20 3, 15 5 C10 3, 10 -4, 15 -12 Z" fill="#FFB703" />
+                <path d="M15 -8 C17.5 -3, 17.5 1.5, 15 3 C12.5 1.5, 12.5 -3, 15 -8 Z" fill="#FFF3B0" />
+              </g>
+            </g>
+
+            <!-- NUMBER "0" CANDLE -->
+            <g transform="translate(216, 48)">
+              <rect x="12" y="46" width="6" height="14" rx="2" fill="#DEC2A2" />
+              <text x="15" y="48" text-anchor="middle" font-family="Cormorant Garamond, serif" font-weight="700" font-size="52" fill="#FFFDF9" stroke="#CC687D" stroke-width="2.5">0</text>
+              <!-- Candle Wick & Flame 2 -->
+              <line x1="15" y1="6" x2="15" y2="13" stroke="#654528" stroke-width="2" stroke-linecap="round" />
+              <path id="candleSmoke2" class="smoke-puff" d="M15 4 C19 -2, 11 -7, 16 -14" stroke="#B8A99A" stroke-width="2" stroke-linecap="round" fill="none" />
+              <g id="candleFlame2" class="flame-anim" style="animation-delay: 0.3s">
+                <circle cx="15" cy="-2" r="14" fill="url(#flameGlow)" />
+                <path d="M15 -12 C20 -4, 20 3, 15 5 C10 3, 10 -4, 15 -12 Z" fill="#FFB703" />
+                <path d="M15 -8 C17.5 -3, 17.5 1.5, 15 3 C12.5 1.5, 12.5 -3, 15 -8 Z" fill="#FFF3B0" />
+              </g>
+            </g>
+
+            <!-- Floating Sparkle Stars -->
+            <text x="72" y="130" font-size="16" opacity="0.8">✨</text>
+            <text x="332" y="125" font-size="16" opacity="0.8">✨</text>
+            <text x="95" y="80" font-size="14" opacity="0.75">🌸</text>
+            <text x="312" y="82" font-size="14" opacity="0.75">🌸</text>
+          </svg>
+        </div>
+
+        <!-- Interactive Blow Candles Control -->
+        <div class="mt-2 flex flex-col items-center gap-2">
+          <button id="blowCandlesBtn" type="button" onclick="toggleCandles()"
+            class="px-5 py-2.5 rounded-full bg-blush-500 hover:bg-blush-400 active:scale-95 text-white text-sm font-semibold shadow-sm transition flex items-center gap-2">
+            <span id="candleBtnEmoji">🕯️</span>
+            <span id="candleBtnText">Make a Wish &amp; Blow Out Candles</span>
+          </button>
+          <p id="candleWishMessage" class="text-xs text-latte-600 italic min-h-[18px] transition-opacity">
+            Close your eyes, make your 20th birthday wish, and tap the button above 🤍
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. POITIERS COUNTDOWN & CONNECTION BANNER -->
+    <section class="cozy-card rounded-3xl p-6 sm:p-7">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-latte-200/70 pb-4">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-wider text-blush-500">University of Poitiers · Law Student</span>
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-latte-800 mt-0.5">Counting Every Moment With You</h2>
+        </div>
+        <div class="cozy-pill px-3.5 py-1.5 rounded-2xl text-xs font-medium text-latte-700 self-start sm:self-center">
+          🇫🇷 Poitiers ↔ 🤍 Always Connected
+        </div>
+      </div>
+
+      <div id="countdownGrid" class="grid grid-cols-4 gap-2.5 sm:gap-4 mt-5 text-center">
+        <div class="bg-cream-100 border border-latte-200 rounded-2xl p-3 sm:p-4">
+          <div id="cdDays" class="font-serif text-2xl sm:text-4xl font-bold text-latte-800">00</div>
+          <div class="text-[11px] sm:text-xs font-medium text-latte-500 uppercase tracking-wide mt-1">Days</div>
+        </div>
+        <div class="bg-cream-100 border border-latte-200 rounded-2xl p-3 sm:p-4">
+          <div id="cdHours" class="font-serif text-2xl sm:text-4xl font-bold text-latte-800">00</div>
+          <div class="text-[11px] sm:text-xs font-medium text-latte-500 uppercase tracking-wide mt-1">Hours</div>
+        </div>
+        <div class="bg-cream-100 border border-latte-200 rounded-2xl p-3 sm:p-4">
+          <div id="cdMinutes" class="font-serif text-2xl sm:text-4xl font-bold text-latte-800">00</div>
+          <div class="text-[11px] sm:text-xs font-medium text-latte-500 uppercase tracking-wide mt-1">Mins</div>
+        </div>
+        <div class="bg-blush-50 border border-blush-200 rounded-2xl p-3 sm:p-4">
+          <div id="cdSeconds" class="font-serif text-2xl sm:text-4xl font-bold text-blush-500">00</div>
+          <div class="text-[11px] sm:text-xs font-medium text-blush-500 uppercase tracking-wide mt-1">Secs</div>
+        </div>
+      </div>
+      <p id="countdownSubtitle" class="text-center text-xs text-latte-600 mt-3.5">
+        Counting down to November 17, 2026 (Europe/Paris Time) 🎂
+      </p>
+    </section>
+
+    <!-- 2b. SING ALONG (APPLE MUSIC PLAYLIST) -->
+    <section id="singAlong" class="cozy-card rounded-3xl p-6 sm:p-8">
+      <div class="flex flex-col sm:flex-row items-center gap-6">
+        <div class="vinyl shrink-0" aria-hidden="true"><div class="vinyl-label">🤍</div></div>
+        <div class="text-center sm:text-left">
+          <span class="cozy-pill px-3.5 py-1 rounded-full text-xs font-semibold text-blush-500">Sing Along Time 🎤</span>
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-latte-800 mt-2.5">Your Birthday Playlist</h2>
+          <p class="text-xs sm:text-sm text-latte-600 mt-1 max-w-md">
+            Put on your headphones and sing out loud, Nanaaaaa. These songs are just for you 🤍
+          </p>
+          <div class="mt-4 flex flex-wrap justify-center sm:justify-start gap-2.5">
+            <a href="https://music.apple.com/id/playlist/lana-birthday/pl.u-r2yBBk2tRraxD9A"
+              target="_blank" rel="noopener noreferrer" onclick="pauseMusicBox()"
+              class="px-5 py-2.5 rounded-full bg-blush-500 hover:bg-blush-400 active:scale-95 text-white text-xs font-semibold shadow-sm transition">
+              🎧 Open in Apple Music
+            </a>
+            <button type="button" onclick="toggleBirthdayMusic()"
+              class="px-5 py-2.5 rounded-full bg-latte-700 hover:bg-latte-800 active:scale-95 text-cream-50 text-xs font-semibold shadow-sm transition">
+              🎵 Play Music Box
+            </button>
+          </div>
+          <p class="text-[11px] text-latte-500 mt-2.5">Opens the “Lana Birthday” playlist in a new tab</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. THE HEARTFELT BIRTHDAY LETTER (EXACT WORDING PRESERVED) -->
+    <section class="cozy-card rounded-3xl p-6 sm:p-10 relative">
+      <div class="flex items-center justify-between gap-2 mb-6 border-b border-latte-200/70 pb-4">
+        <div class="flex items-center gap-2.5">
+          <span class="text-2xl">💌</span>
+          <div>
+            <h2 class="font-serif text-2xl sm:text-3xl font-bold text-latte-800">A Letter For Your 20th Birthday</h2>
+            <p class="text-xs text-latte-500">Written with all my heart · November 17, 2026</p>
+          </div>
+        </div>
+        <span class="hidden sm:inline-block text-xs font-serif italic text-latte-500">To: Lana Raynaud</span>
+      </div>
+
+      <article class="space-y-4 text-[15px] sm:text-base text-latte-800 leading-relaxed font-normal">
+        <p class="font-serif text-xl sm:text-2xl font-semibold text-blush-500">
+          Hiii nanaaaaa, happy 20 Years Old birthday!! Mwah mwah! 🧸🤍✨
+        </p>
+
+        <p>
+          Sitting here today, my heart feels so full, a little emotional, and honestly a bit sad because I’m not right there beside you in Poitiers to hold your hand and cuddle you and look into your eyes, and wish you a happy birthday in person. anywayyy this year i’m 23 and you’re finally turning 20yo today yayyyy hihih makes me smile so big, yet it makes me miss you so much it aches. I just want to pull you into the longest, tightest hug right now and never let go nana.
+        </p>
+
+        <p>
+          and again happy 20th birthday to my sweet autumn girl, my cozy girl, my cute girl with that effortless chic glow. anyway you look so pretty and put together on the outside, and yes, I love spoiling my cute shopaholic girl but Nana, I want to be completely honest with you from the bottom of my heart. I don’t love you for your looks, your body, or anything materialistic tbh. those things fade, and I’m just a simple guy who values what’s real. I love you because I truly see who you are on the inside. Your pure heart, your softness, your goofy side, the way you care, and the honest, gentle soul beneath everything that is what made me fall so deeply in love with you.
+        </p>
+
+        <p>
+          yk even on the days when distance feels heavy and I get a little sad wishing I could just teleport to your side, loving you makes me the happiest guy alive. nana you bring so much warmth, peace, and joy into my life just by being you. i promise to always be a gentle, loyal, patient, and honest man, and someone who holds you down through every high and low, listens to you, protects your heart, and loves you unconditionally, not for what we have, but for who we are together.
+        </p>
+
+        <p>
+          right now, my biggest dream is counting down the days until i move to my apartment in cambridge and i can finally close to nana and get on a flight straight to poitiers hhihihi. I picture it all the time like walking through your door, wrapping my arms around you, breathing you in, and just cuddling on the couch for hours. cooking together, laughing at silly things, keeping you warm, and making up for every single day we spent apart yayyyy and sleep and i take silly nana leak saliva from mouth when asleep and record when u snore.
+        </p>
+
+        <p>
+          and nana I’m always praying that you pass every exam with the best grades at Poitiers University and grow into the brilliant, compassionate lawyer I know you’re meant to be. While you chase your dreams in law and I work hard building my path as a businessman, know that we are walking side by side. I am endlessly proud of you, endlessly grateful for you, and missing you more than words could ever explain.
+        </p>
+
+        <p>
+          Happy 20th birthday, my love. Have the coziest, happiest day and save a million hugs and cuddles for me.
+        </p>
+
+        <div class="pt-4 border-t border-latte-200/60 flex items-center justify-between">
+          <div>
+            <p class="text-xs italic text-latte-600">Mwah, always seeing inside of you and loving the real you,</p>
+            <p class="font-serif text-2xl font-bold italic text-latte-800 mt-1">Azzi Raasha 🤍</p>
+          </div>
+          <div class="text-2xl select-none">🧸🐰</div>
+        </div>
+      </article>
+    </section>
+
+    <!-- 4. TEDDY & BUNNY CUDDLE CLUB -->
+    <section class="cozy-card rounded-3xl p-6 sm:p-8 text-center">
+      <span class="cozy-pill px-3.5 py-1 rounded-full text-xs font-semibold text-latte-700">
+        Teddy &amp; Bunny Cuddle Club
+      </span>
+      <h2 class="font-serif text-2xl sm:text-3xl font-bold text-latte-800 mt-3">
+        Send Cuddles Anytime You Miss Me
+      </h2>
+      <p class="text-xs sm:text-sm text-latte-600 mt-1 max-w-md mx-auto">
+        Whenever law school gets busy in Poitiers, tap Teddy or Bunny for a warm hug, cuddle &amp; sweet note.
+      </p>
+
+      <!-- Animated Hugging Teddy Bear & Cute Bunny Illustration -->
+      <div class="mt-5 flex justify-center">
+        <button id="cuddleStageBtn" type="button" onclick="triggerCuddle('hug')"
+          aria-label="Tap hugging Teddy Bear and Bunny for a warm cuddle"
+          class="group relative w-full max-w-[320px] rounded-3xl bg-gradient-to-b from-cream-50 via-blush-50/70 to-cream-100 border border-blush-200/80 p-4 shadow-sm hover:shadow-md active:scale-[0.98] transition cursor-pointer">
+          <svg viewBox="0 0 300 165" class="w-full h-auto select-none" role="img" aria-label="Cute Teddy Bear and Bunny hugging warmly">
+            <!-- Soft Cozy Rug Shadow -->
+            <ellipse cx="150" cy="146" rx="108" ry="12" fill="#EBD9C3" opacity="0.55" />
+
+            <!-- Floating Cuddle Hearts Above -->
+            <g class="cuddle-heart-anim">
+              <text x="150" y="30" text-anchor="middle" font-size="18">🤍</text>
+              <text x="122" y="42" text-anchor="middle" font-size="13">💗</text>
+              <text x="178" y="42" text-anchor="middle" font-size="13">💗</text>
+            </g>
+
+            <!-- LEFT: CUTE WARM TEDDY BEAR -->
+            <g class="teddy-cuddle-anim">
+              <!-- Bear Ears -->
+              <circle cx="88" cy="54" r="13" fill="#B5835A" stroke="#7A5233" stroke-width="2" />
+              <circle cx="88" cy="54" r="7" fill="#E6B89C" />
+              <circle cx="132" cy="54" r="13" fill="#B5835A" stroke="#7A5233" stroke-width="2" />
+              <circle cx="132" cy="54" r="7" fill="#E6B89C" />
+
+              <!-- Bear Chubby Body -->
+              <ellipse cx="112" cy="116" rx="30" ry="28" fill="#B5835A" stroke="#7A5233" stroke-width="2" />
+              <ellipse cx="114" cy="118" rx="18" ry="17" fill="#E6B89C" opacity="0.7" />
+
+              <!-- Bear Head -->
+              <circle cx="110" cy="76" r="27" fill="#C28E63" stroke="#7A5233" stroke-width="2" />
+              <!-- Bear Snout -->
+              <ellipse cx="113" cy="83" rx="12" ry="9.5" fill="#F5DFC9" />
+              <ellipse cx="113" cy="79.5" rx="4.5" ry="3" fill="#5C3A21" />
+              <path d="M109 84.5 Q113 88 117 84.5" stroke="#5C3A21" stroke-width="1.8" stroke-linecap="round" fill="none" />
+              <!-- Happy Closed Eyes & Blush -->
+              <path d="M97 73 Q101 69 105 73" stroke="#47301B" stroke-width="2" stroke-linecap="round" fill="none" />
+              <path d="M119 73 Q123 69 127 73" stroke="#47301B" stroke-width="2" stroke-linecap="round" fill="none" />
+              <circle cx="95" cy="79" r="4" fill="#F2B8C3" opacity="0.85" />
+              <circle cx="128" cy="79" r="4" fill="#F2B8C3" opacity="0.85" />
+
+              <!-- Bear Hugging Arm Reaching Around Bunny -->
+              <path d="M126 105 C146 102, 162 108, 166 116 C168 121, 160 125, 148 122 L125 117 Z" fill="#B5835A" stroke="#7A5233" stroke-width="2" stroke-linejoin="round" />
+              <!-- Bear Cute Feet -->
+              <ellipse cx="96" cy="141" rx="11" ry="7" fill="#C28E63" stroke="#7A5233" stroke-width="1.8" />
+              <ellipse cx="122" cy="142" rx="11" ry="7" fill="#C28E63" stroke="#7A5233" stroke-width="1.8" />
+            </g>
+
+            <!-- RIGHT: CUTE LITTLE BUNNY PLUSHIE -->
+            <g class="bunny-cuddle-anim">
+              <!-- Long Bunny Ears -->
+              <ellipse cx="174" cy="36" rx="8" ry="23" transform="rotate(-10 174 36)" fill="#FFFDF9" stroke="#D8A7B1" stroke-width="2" />
+              <ellipse cx="174" cy="37" rx="4" ry="16" transform="rotate(-10 174 37)" fill="#F9D6DC" />
+              <ellipse cx="204" cy="37" rx="8" ry="23" transform="rotate(12 204 37)" fill="#FFFDF9" stroke="#D8A7B1" stroke-width="2" />
+              <ellipse cx="204" cy="38" rx="4" ry="16" transform="rotate(12 204 38)" fill="#F9D6DC" />
+
+              <!-- Bunny Fluffy Tail -->
+              <circle cx="218" cy="127" r="9" fill="#FFFDF9" stroke="#D8A7B1" stroke-width="1.8" />
+
+              <!-- Bunny Chubby Body -->
+              <ellipse cx="188" cy="117" rx="28" ry="27" fill="#FFFDF9" stroke="#D8A7B1" stroke-width="2" />
+              <ellipse cx="185" cy="119" rx="16" ry="16" fill="#FDECEF" opacity="0.8" />
+
+              <!-- Bunny Head -->
+              <circle cx="189" cy="77" r="25" fill="#FFFDF9" stroke="#D8A7B1" stroke-width="2" />
+              <!-- Happy Closed Eyes, Pink Nose & Blush -->
+              <path d="M174 74 Q178 70 182 74" stroke="#654528" stroke-width="2" stroke-linecap="round" fill="none" />
+              <path d="M194 74 Q198 70 202 74" stroke="#654528" stroke-width="2" stroke-linecap="round" fill="none" />
+              <ellipse cx="187" cy="80" rx="3.5" ry="2.5" fill="#E48D9F" />
+              <path d="M183 84 Q187 87.5 191 84" stroke="#654528" stroke-width="1.8" stroke-linecap="round" fill="none" />
+              <circle cx="172" cy="80" r="4.2" fill="#F9D6DC" />
+              <circle cx="203" cy="80" r="4.2" fill="#F9D6DC" />
+
+              <!-- Cute Pink Bow on Bunny Ear -->
+              <path d="M199 54 C193 49, 190 55, 196 57 C191 60, 195 64, 199 58 C203 64, 207 60, 202 57 C208 55, 205 49, 199 54 Z" fill="#E48D9F" />
+
+              <!-- Bunny Hugging Arm Reaching Around Teddy -->
+              <path d="M172 106 C153 103, 138 109, 135 117 C133 122, 141 125, 152 122 L173 117 Z" fill="#FFFDF9" stroke="#D8A7B1" stroke-width="2" stroke-linejoin="round" />
+
+              <!-- Bunny Cute Feet -->
+              <ellipse cx="176" cy="142" rx="10.5" ry="6.5" fill="#FFFDF9" stroke="#D8A7B1" stroke-width="1.8" />
+              <ellipse cx="202" cy="141" rx="10.5" ry="6.5" fill="#FFFDF9" stroke="#D8A7B1" stroke-width="1.8" />
+            </g>
+          </svg>
+          <span class="mt-1 inline-block rounded-full bg-white/90 px-3 py-1 text-[11px] font-semibold text-blush-500 border border-blush-200 group-hover:bg-blush-100 transition">
+            Tap Teddy &amp; Bunny For A Tight Cuddle 🧸🤍🐰
+          </span>
+        </button>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-5">
+        <!-- Teddy Card -->
+        <button type="button" onclick="triggerCuddle('teddy')"
+          class="group bg-cream-100 hover:bg-cream-200/80 active:scale-[0.98] border border-latte-200 rounded-2xl p-5 transition text-center flex flex-col items-center">
+          <div class="text-4xl float-slow select-none mb-2">🧸</div>
+          <span class="font-serif text-xl font-bold text-latte-800">Azzi’s Warm Teddy Bear</span>
+          <span class="text-xs text-latte-600 mt-1">Tap for a cozy bear hug &amp; forehead kiss</span>
+          <span class="mt-3 px-3.5 py-1 rounded-full bg-white text-[11px] font-semibold text-latte-700 border border-latte-200 group-hover:border-latte-400 transition">
+            Send Bear Hug 🤎
+          </span>
+        </button>
+
+        <!-- Bunny Card -->
+        <button type="button" onclick="triggerCuddle('bunny')"
+          class="group bg-blush-50 hover:bg-blush-100/80 active:scale-[0.98] border border-blush-200 rounded-2xl p-5 transition text-center flex flex-col items-center">
+          <div class="text-4xl float-slow select-none mb-2" style="animation-delay: 0.7s">🐰</div>
+          <span class="font-serif text-xl font-bold text-latte-800">Nana’s Sweet Little Bunny</span>
+          <span class="text-xs text-latte-600 mt-1">Tap for gentle encouragement &amp; snuggles</span>
+          <span class="mt-3 px-3.5 py-1 rounded-full bg-white text-[11px] font-semibold text-blush-500 border border-blush-200 group-hover:border-blush-400 transition">
+            Send Bunny Cuddle 🌸
+          </span>
+        </button>
+      </div>
+
+      <!-- Cuddle Feedback Banner -->
+      <div id="cuddleFeedbackBox" class="mt-5 bg-cream-50 border border-latte-200 rounded-2xl px-4 py-3.5 text-sm text-latte-800" aria-live="polite">
+        <span id="cuddleFeedbackText" class="font-medium">🧸 + 🐰 are wrapped in a cozy blanket waiting to hug Nanaa!</span>
+        <div class="mt-1 text-[11px] text-latte-500">
+          Total Cuddles Delivered Today: <span id="cuddleCounter" class="font-bold text-blush-500">0</span> 🤍
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SWEETEST NANA CUTE PICTURE (6 ADD-YOUR-OWN PHOTO SLOTS + LIGHTBOX) -->
+    <section class="cozy-card rounded-3xl p-6 sm:p-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 mb-6">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-wider text-blush-500">Photo Gallery · 6 Memories</span>
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-latte-800 mt-0.5">Sweetest Nana Cute Picture 📸🤍</h2>
+        </div>
+        <p class="text-xs text-latte-500">Tap any box to add photo from your library · Tap photo for full view ✨</p>
+      </div>
+
+      <!-- Hidden File Input for Adding Photo from Device Library -->
+      <input id="nanaPhotoPicker" type="file" accept="image/*" class="hidden" onchange="handleNanaPhotoUpload(event)" />
+
+      <div id="photoGalleryGrid" class="grid grid-cols-2 sm:grid-cols-3 gap-3.5 sm:gap-4">
+        <!-- Populated cleanly via JS -->
+      </div>
+    </section>
+
+    <!-- 6. CUTIE COUPON BOOK (NATURAL, CUTE, COZY EVERYDAY PRIVILEGES) -->
+    <section class="cozy-card rounded-3xl p-6 sm:p-8">
+      <div class="text-center mb-6">
+        <span class="cozy-pill px-3.5 py-1 rounded-full text-xs font-semibold text-blush-500">
+          Cutie Coupon Book · Tap To Redeem
+        </span>
+        <h2 class="font-serif text-2xl sm:text-3xl font-bold text-latte-800 mt-2.5">
+          Sweet Privileges For Baby, Nanaa &amp; Bibi
+        </h2>
+        <p class="text-xs sm:text-sm text-latte-600 mt-1">
+          Valid anytime, with zero expiration date—just tap a coupon whenever you want to use it 🎟️🤍
+        </p>
+      </div>
+
+      <div id="couponGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+        <!-- Populated via JS with natural, cute, cozy everyday privileges -->
+      </div>
+    </section>
+
+    <!-- 7. 20 AFFIRMATIONS FOR NANA'S FUTURE, LAW SCHOOL & ABUNDANCE -->
+    <section class="cozy-card rounded-3xl p-6 sm:p-8">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-5">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-wider text-blush-500">20 Birthday Affirmations · Chapter 20</span>
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-latte-800 mt-0.5">
+            For Your Future, Law Dreams &amp; Abundance ✨
+          </h2>
+          <p class="text-xs text-latte-600 mt-1">
+            Twenty reminders of how brilliant, capable, and unstoppable you are on your own path.
+          </p>
+        </div>
+
+        <button type="button" onclick="nextAffirmation()"
+          class="self-start sm:self-center shrink-0 px-4 py-2 rounded-full bg-blush-500 hover:bg-blush-400 active:scale-95 text-white text-xs font-semibold shadow-sm transition flex items-center gap-1.5">
+          <span>Next Affirmation</span>
+          <span>✨</span>
+        </button>
+      </div>
+
+      <!-- Featured Spotlight Affirmation Card -->
+      <div id="spotlightAffirmationBox"
+        class="bg-gradient-to-br from-blush-50 via-cream-50 to-cream-100 border border-blush-200 rounded-2xl p-5 sm:p-6 mb-5 text-center transition-all">
+        <div class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-white border border-blush-200 text-[11px] font-semibold text-blush-500 mb-2.5">
+          <span>Affirmation</span>
+          <span id="spotlightNumber">#1</span>
+          <span>of 20</span>
+        </div>
+        <p id="spotlightText" class="font-serif text-xl sm:text-2xl font-semibold text-latte-800 leading-snug">
+          “I am stepping into my twenties with grace, clarity, and unshakable confidence in the woman I am becoming.”
+        </p>
+        <p id="spotlightTag" class="text-xs text-latte-500 mt-2 font-medium">
+          Self-Worth &amp; New Beginnings 🤍
+        </p>
+      </div>
+
+      <!-- Complete Interactive 20 Affirmations Grid -->
+      <div id="affirmationsGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+        <!-- Populated via JS with all 20 affirmations -->
+      </div>
+    </section>
+
+    <!-- 8. BIRTHDAY SURPRISE JACKET REVEAL -->
+    <section class="cozy-card rounded-3xl p-6 sm:p-8 text-center relative overflow-hidden">
+      <span class="cozy-pill px-3.5 py-1 rounded-full text-xs font-semibold text-latte-700">
+        Your 20th Birthday Surprise Gift 🎁
+      </span>
+      <h2 class="font-serif text-2xl sm:text-3xl font-bold text-latte-800 mt-2.5">
+        Something Cozy To Keep You Warm In Poitiers
+      </h2>
+      <p class="text-xs sm:text-sm text-latte-600 mt-1 max-w-md mx-auto">
+        Because autumn and winter in France get chilly, I already picked out a special birthday surprise for you…
+      </p>
+
+      <div id="jacketClosedBox" class="mt-6 max-w-md mx-auto bg-cream-100 border-2 border-dashed border-latte-300 rounded-2xl p-6">
+        <div id="giftEmoji" class="text-6xl mb-3 float-slow select-none">🎁</div>
+        <p class="font-serif text-xl font-bold text-latte-800">Tap To Unwrap Your Birthday Gift</p>
+        <p class="text-xs text-latte-500 mt-1">Wrapped with love by Azzi 🤍</p>
+        <button type="button" onclick="revealJacketGift()"
+          class="mt-4 px-5 py-2.5 rounded-full bg-latte-700 hover:bg-latte-800 active:scale-95 text-cream-50 text-xs font-semibold transition shadow-sm">
+          Unwrap Birthday Surprise ✨
+        </button>
+      </div>
+
+      <div id="jacketRevealedBox" class="hidden mt-6 max-w-md mx-auto bg-gradient-to-b from-cream-50 to-blush-50 border border-blush-200 rounded-2xl p-6 text-center relative overflow-hidden">
+        <div class="jacket-art relative mx-auto w-52">
+          <svg viewBox="0 0 200 170" class="w-full h-auto jacket-sway" role="img" aria-label="Cozy birthday jacket">
+            <ellipse cx="100" cy="162" rx="70" ry="7" fill="#EBD9C3" opacity=".6" />
+            <path d="M62 30 L38 42 L14 128 L40 136 L56 84 L56 150 Q100 160 144 150 L144 84 L160 136 L186 128 L162 42 L138 30 Q100 52 62 30Z" fill="#C8A37E" stroke="#845E3A" stroke-width="3" stroke-linejoin="round" />
+            <path d="M62 30 Q100 58 138 30 L128 22 Q100 42 72 22Z" fill="#F7EFE1" stroke="#845E3A" stroke-width="3" stroke-linejoin="round" />
+            <path d="M14 128 L40 136 M160 136 L186 128 M56 150 Q100 160 144 150" stroke="#F2B8C3" stroke-width="7" stroke-linecap="round" fill="none" />
+            <line x1="100" y1="46" x2="100" y2="156" stroke="#654528" stroke-width="2.5" stroke-dasharray="3 3" />
+            <path d="M64 118 Q76 126 88 118 M112 118 Q124 126 136 118" stroke="#845E3A" stroke-width="2.5" fill="none" stroke-linecap="round" />
+            <path d="M122 92 C112 84 112 76 118 76 C121 76 122 79 122 79 C122 79 123 76 126 76 C132 76 132 84 122 92Z" fill="#E48D9F" />
+          </svg>
+          <span class="absolute -top-1 left-0 text-xl twinkle">✨</span>
+          <span class="absolute top-6 -right-2 text-xl twinkle" style="animation-delay:.5s">🤍</span>
+          <span class="absolute bottom-6 -left-3 text-lg twinkle" style="animation-delay:.9s">🌸</span>
+        </div>
+        <span class="inline-block px-3 py-0.5 rounded-full bg-blush-100 text-blush-500 text-[11px] font-semibold mt-2">
+          Birthday Surprise Secured!
+        </span>
+        <h3 class="font-serif text-2xl font-bold text-latte-800 mt-2">
+          A Cozy New Jacket Just For You!
+        </h3>
+        <p id="jacketHugText" class="text-xs sm:text-sm text-latte-600 mt-2 leading-relaxed">
+          I already bought you a jacket for your 20th birthday surprise so every time you wear it walking around Poitiers or heading to your law lectures, it feels like I’m wrapping my arms around you keeping you warm. 🧸✨
+        </p>
+        <div class="mt-4 flex flex-wrap justify-center gap-2.5">
+          <button type="button" onclick="hugJacket()"
+            class="px-4 py-2 rounded-full bg-blush-500 hover:bg-blush-400 active:scale-95 text-white text-xs font-semibold shadow-sm transition">
+            Wear It 🧥
+          </button>
+          <button type="button" onclick="rewrapJacket()"
+            class="px-4 py-2 rounded-full bg-cream-200 hover:bg-cream-300 active:scale-95 text-latte-700 text-xs font-semibold transition">
+            Wrap It Again 🎁
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. EARLY CHRISTMAS TREAT PASS (NORMAL, COZY CHRISTMAS GIFT CHOICES) -->
+    <section class="cozy-card rounded-3xl p-6 sm:p-8 ticket-notch">
+      <div class="text-center border-b border-dashed border-latte-300 pb-5">
+        <span class="cozy-pill px-3.5 py-1 rounded-full text-xs font-semibold text-blush-500">
+          Early Christmas Treat Pass · December 2026 🎄
+        </span>
+        <h2 class="font-serif text-2xl sm:text-3xl font-bold text-latte-800 mt-2.5">
+          Claim Your Cozy Little Christmas Gift
+        </h2>
+        <p class="text-xs sm:text-sm text-latte-600 mt-1 max-w-md mx-auto">
+          Since your jacket is already your birthday surprise, pick one sweet &amp; cozy little Christmas treat you’d love next month! ❄️🤍
+        </p>
+      </div>
+
+      <div id="christmasOptionsGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-5">
+        <!-- Populated via JS with normal, sweet Christmas gift options -->
+      </div>
+
+      <div id="christmasClaimBanner" class="mt-5 bg-cream-100 border border-latte-200 rounded-2xl p-4 text-center">
+        <p id="christmasSelectedText" class="text-xs sm:text-sm font-medium text-latte-700">
+          Tap one cozy Christmas option above to lock in your wish ✨
+        </p>
+      </div>
+    </section>
+
+    <!-- 10. NANA'S REPLY NOTE & SHARE ACTIONS -->
+    <section class="cozy-card rounded-3xl p-6 sm:p-8">
+      <div class="flex items-center gap-2.5 mb-4">
+        <span class="text-2xl">✍️</span>
+        <div>
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-latte-800">Write A Little Note Back To Azzi</h2>
+          <p class="text-xs text-latte-500">Tell me your birthday wish, your favorite affirmation, or copy a cute reply to send me 🤍</p>
+        </div>
+      </div>
+
+      <textarea id="nanaReplyInput" rows="3"
+        placeholder="Write anything here, Nanaaaaa... (e.g. your 20th birthday wish, how you feel turning 20, or which Christmas treat you picked 🧸)"
+        class="w-full rounded-2xl bg-cream-50 border border-latte-200 focus:border-blush-400 focus:outline-none p-4 text-sm text-latte-800 placeholder:text-latte-400 transition resize-none"></textarea>
+
+      <div class="mt-4 flex flex-wrap items-center justify-between gap-3">
+        <div class="flex flex-wrap gap-2">
+          <button type="button" onclick="saveNanaReply()"
+            class="px-4 py-2.5 rounded-full bg-blush-500 hover:bg-blush-400 active:scale-95 text-white text-xs font-semibold transition shadow-sm">
+            Save My Birthday Note 💌
+          </button>
+          <button type="button" onclick="copyFullSummaryForAzzi()"
+            class="px-4 py-2.5 rounded-full bg-latte-700 hover:bg-latte-800 active:scale-95 text-cream-50 text-xs font-semibold transition shadow-sm">
+            Copy Summary For Azzi 📋
+          </button>
+        </div>
+
+        <span id="replyStatusMsg" class="text-xs font-medium text-blush-500"></span>
+      </div>
+    </section>
+
+    <!-- 11. CUTE CLOSING FINALE CARD -->
+    <footer class="cozy-card rounded-3xl p-7 sm:p-10 text-center bg-gradient-to-b from-cream-50 to-blush-50/70 border border-blush-200 relative overflow-hidden">
+      <div class="flex justify-center items-center gap-2.5 text-3xl sm:text-4xl mb-3 select-none">
+        <span class="float-slow">🧸</span>
+        <span>🤍</span>
+        <span class="float-slow" style="animation-delay: 0.6s">🐰</span>
+      </div>
+
+      <span class="cozy-pill px-3.5 py-1 rounded-full text-xs font-semibold text-blush-500">
+        Happiest 20th Birthday, My Sweet Girl
+      </span>
+
+      <h2 class="font-serif text-2xl sm:text-4xl font-bold text-latte-800 mt-3 leading-snug">
+        A Cute Little Closing Note For Turning 20, Nanaaaaa 🧸🤍✨
+      </h2>
+
+      <p class="mt-3 text-sm sm:text-base text-latte-700 max-w-xl mx-auto leading-relaxed">
+        Thank you for being the sweetest, kindest, and brightest soul in my life. As you blow out your 20th birthday candles today, remember that you are deeply cherished, endlessly capable, and surrounded by so much love—from your cozy jacket days in Poitiers all the way into our warm Christmas season ahead.
+      </p>
+
+      <div class="mt-5 inline-flex flex-wrap items-center justify-center gap-2 bg-white/90 border border-latte-200 rounded-2xl px-4 py-2.5 text-xs text-latte-600">
+        <span>Big Teddy Hugs</span>
+        <span>·</span>
+        <span>Soft Bunny Kisses</span>
+        <span>·</span>
+        <span>Cheers to Chapter 20 &amp; Christmas 🎄✨</span>
+      </div>
+
+      <p class="mt-6 font-serif italic text-lg text-latte-700">
+        Made with endless love for Lana Raynaud (Nov 17, 2026) — Forever yours, Azzi Raasha 🤍
+      </p>
+    </footer>
+
+  </main>
+
+  <!-- PHOTO LIGHTBOX MODAL -->
+  <div id="photoLightbox" class="fixed inset-0 z-50 hidden bg-latte-900/75 p-4 flex items-center justify-center" onclick="closeLightbox(event)">
+    <div class="cozy-card rounded-3xl max-w-lg w-full p-4 sm:p-6 relative text-center" onclick="event.stopPropagation()">
+      <button type="button" onclick="closeLightbox()"
+        class="absolute top-3 right-3 w-8 h-8 rounded-full bg-cream-200 hover:bg-blush-200 text-latte-800 font-bold text-sm flex items-center justify-center transition"
+        aria-label="Close photo">
+        ✕
+      </button>
+      <img id="lightboxImg" src="" alt="Memory" class="w-full max-h-[62vh] object-cover rounded-2xl border border-latte-200" />
+      <h3 id="lightboxTitle" class="font-serif text-2xl font-bold text-latte-800 mt-3"></h3>
+      <p id="lightboxCaption" class="text-xs sm:text-sm text-latte-600 mt-1"></p>
+      <div class="mt-4 flex items-center justify-center gap-2.5">
+        <button id="lightboxReplaceBtn" type="button"
+          class="px-4 py-2 rounded-full bg-blush-500 hover:bg-blush-400 active:scale-95 text-white text-xs font-semibold transition">
+          Change Photo From Library 📷
+        </button>
+        <button id="lightboxRemoveBtn" type="button"
+          class="px-4 py-2 rounded-full bg-cream-200 hover:bg-cream-300 active:scale-95 text-latte-700 text-xs font-semibold transition">
+          Clear Slot
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION BANNER -->
+  <div id="toastBanner" role="status" aria-live="polite"
+    class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 transition-opacity duration-300 bg-latte-800 text-cream-50 px-5 py-2.5 rounded-full text-xs font-semibold shadow-lg">
+    Saved!
+  </div>
+
+  <script>
+    // =========================================================================
+    // 1. DATA DEFINITIONS (COUPONS, 20 AFFIRMATIONS, CHRISTMAS PASS, PHOTOS)
+    // =========================================================================
+
+    // Natural, cute, cozy everyday privileges for Baby, Nanaa & Bibi
+    const COUPONS_DATA = [
+      {
+        id: 'coffee-croissant',
+        emoji: '🥐☕',
+        title: 'Cozy Coffee & Croissant Date',
+        desc: 'One warm café treat—your favorite hot drink and flaky pastry on me, no rushing allowed.'
+      },
+      {
+        id: 'movie-voice',
+        emoji: '🎬🌙',
+        title: 'Midnight Voice-Note & Movie Night',
+        desc: 'Pick any movie you want to watch together while I send sleepy bedtime voice notes.'
+      },
+      {
+        id: 'study-snack',
+        emoji: '🍓📚',
+        title: 'No-Stress Study Break & Sweet Snacks',
+        desc: 'Redeem whenever law school feels heavy—instant study pause with your favorite sweet treats.'
+      },
+      {
+        id: 'warm-hugs',
+        emoji: '🧸🤍',
+        title: 'Unlimited Warm Hugs & Forehead Kisses',
+        desc: 'Redeemable on demand for extra-long cuddles, gentle head pats, and forehead kisses.'
+      },
+      {
+        id: 'princess-morning',
+        emoji: '👑🛌',
+        title: 'Extra Sleep-In & Princess Treatment',
+        desc: 'A slow, cozy morning where you stay wrapped in your blanket and get spoiled all day.'
+      },
+      {
+        id: 'flowers-plushie',
+        emoji: '🌷🐰',
+        title: 'Mini Cute Plushie or Flowers Surprise',
+        desc: 'A spontaneous little bouquet or cute soft plushie just to make Nanaa smile.'
+      }
+    ];
+
+    // 20 Affirmations dedicated entirely to Nana's own future, law school success, and abundance
+    const AFFIRMATIONS_20 = [
+      {
+        text: "I am stepping into my twenties with grace, clarity, and unshakable confidence in the woman I am becoming.",
+        tag: "Self-Worth & New Beginnings 🤍"
+      },
+      {
+        text: "My mind is sharp, focused, and capable of mastering every legal concept and exam at the University of Poitiers.",
+        tag: "Law School Excellence ⚖️"
+      },
+      {
+        text: "I am building a brilliant future as a respected, compassionate, and accomplished lawyer.",
+        tag: "Future Legal Career ✨"
+      },
+      {
+        text: "Abundance flows naturally into my life—in opportunities, wisdom, financial independence, and genuine joy.",
+        tag: "Personal & Financial Abundance 🌟"
+      },
+      {
+        text: "Every hour I invest in my studies and growth today is creating a life of freedom and pride tomorrow.",
+        tag: "Dedication & Growth 📚"
+      },
+      {
+        text: "I deserve every good thing that comes my way without ever needing to shrink myself or doubt my worth.",
+        tag: "Unapologetic Self-Worth 🌸"
+      },
+      {
+        text: "I handle challenges with calm resilience, turning every obstacle into proof of my own strength.",
+        tag: "Inner Strength & Composure 🕊️"
+      },
+      {
+        text: "My voice matters, my ideas carry weight, and I belong in every room I walk into.",
+        tag: "Confidence & Voice 🎙️"
+      },
+      {
+        text: "I attract healthy friendships, supportive mentors, and doors that open at the exact right time.",
+        tag: "Aligned Opportunities 🚪"
+      },
+      {
+        text: "Peace is my natural state; I release stress easily and trust the timing of my life.",
+        tag: "Inner Peace & Balance ☁️"
+      },
+      {
+        text: "I am allowed to rest, recharge, and take gentle care of myself while still achieving big dreams.",
+        tag: "Softness & Self-Care 🧸"
+      },
+      {
+        text: "My kindness and empathy are superpowers that make me both an extraordinary human and a remarkable advocate.",
+        tag: "Heart & Integrity 🤍"
+      },
+      {
+        text: "Financial stability, career success, and creative freedom are part of my bright future.",
+        tag: "Prosperity & Freedom 💫"
+      },
+      {
+        text: "I learn quickly, retain knowledge effortlessly, and walk into every exam room prepared and calm.",
+        tag: "Academic Confidence 🎓"
+      },
+      {
+        text: "I am proud of how far I have already come, and excited for all the versions of me waiting ahead.",
+        tag: "Self-Pride & Vision 🌷"
+      },
+      {
+        text: "My standards are high because I know the value of my time, my energy, and my heart.",
+        tag: "Healthy Boundaries ✨"
+      },
+      {
+        text: "Good news, lucky breaks, and joyful surprises find me effortlessly throughout my twentieth year.",
+        tag: "Good Fortune & Joy 🍀"
+      },
+      {
+        text: "I radiate warmth, intelligence, and quiet elegance wherever I go in Poitiers and beyond.",
+        tag: "Natural Radiance ☀️"
+      },
+      {
+        text: "I trust my intuition to guide me toward decisions that honor my happiness and long-term success.",
+        tag: "Self-Trust & Wisdom 🧭"
+      },
+      {
+        text: "Twenty is my year to bloom—healthy, abundant, deeply fulfilled, and thriving on my own terms.",
+        tag: "Thriving At 20 🎂"
+      }
+    ];
+
+    // Normal, sweet Early Christmas Gift options (since jacket is already bought for birthday!)
+    const CHRISTMAS_OPTIONS = [
+      {
+        id: 'scarf-gloves',
+        emoji: '🧣🧤',
+        title: 'Cozy Winter Scarf & Warm Gloves Set',
+        desc: 'Soft knit accessories to match your new birthday jacket during chilly Poitiers mornings.'
+      },
+      {
+        id: 'pastry-cocoa',
+        emoji: '☕🎄',
+        title: 'Christmas Pastry & Hot Chocolate Treat',
+        desc: 'A festive holiday café afternoon with rich hot chocolate and sweet winter pastries.'
+      },
+      {
+        id: 'candle-socks',
+        emoji: '🕯️🧦',
+        title: 'Vanilla Scented Candle & Fuzzy Socks',
+        desc: 'Cozy evening essentials for relaxing in your room after December law classes.'
+      },
+      {
+        id: 'planner-book',
+        emoji: '📓✨',
+        title: 'Cute 2027 Law Planner or Favorite Book',
+        desc: 'A pretty aesthetic notebook/planner or a book from your wishlist for the new year.'
+      }
+    ];
+
+    // 6-Slot Custom Photo Library Boxes (Users can pick their own photos from device library)
+    const GALLERY_SLOTS = [
+      {
+        title: 'Sweetest Nana Smile',
+        caption: 'Your prettiest smile that brightens every single day ✨'
+      },
+      {
+        title: 'Cozy Autumn Outfit',
+        caption: 'My chic autumn girl looking effortlessly adorable 🍂'
+      },
+      {
+        title: 'Poitiers Cute Moment',
+        caption: 'A little snapshot from your days in Poitiers 🇫🇷🤍'
+      },
+      {
+        title: 'Soft & Goofy Bibi',
+        caption: 'The cutest, sweetest side of Nanaa that I adore 🧸'
+      },
+      {
+        title: 'Blanket & Cuddle Mood',
+        caption: 'Cozy nights wrapped up warm after studying 📚🌸'
+      },
+      {
+        title: 'Turning 20 Celebration',
+        caption: 'Celebrating 20 wonderful years of Lana Raynaud 🎂🤍'
+      }
+    ];
+
+    // =========================================================================
+    // 2. STATE MANAGEMENT (WITH LOCALSTORAGE PERSISTENCE)
+    // =========================================================================
+    const STORAGE_KEY = 'lana_20th_bday_state_v2';
+    let appState = {
+      candlesOut: false,
+      cuddleCount: 0,
+      redeemedCoupons: [],
+      activeAffirmationIndex: 0,
+      jacketRevealed: false,
+      christmasChoice: null,
+      nanaReply: '',
+      customPhotos: {}
+    };
+    let activePhotoSlotIndex = null;
+
+    function loadState() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          appState = {
+            ...appState,
+            ...parsed,
+            redeemedCoupons: Array.isArray(parsed.redeemedCoupons) ? parsed.redeemedCoupons : [],
+            customPhotos: parsed.customPhotos && typeof parsed.customPhotos === 'object' ? parsed.customPhotos : {}
+          };
+        }
+      } catch (e) {
+        // Fallback to default in-memory state if localStorage is restricted
+      }
+    }
+
+// Every visit starts fresh: candles lit, 0 cuddles, coupons/gift/choices unopened (photos & note are kept)
+    function resetFreshState() {
+      Object.assign(appState, {
+        candlesOut: false, cuddleCount: 0, redeemedCoupons: [],
+        activeAffirmationIndex: 0, jacketRevealed: false, christmasChoice: null
+      });
+      saveState();
+    }
+
+    function saveState() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(appState));
+      } catch (e) {
+        showToast('Storage is full, so this change will be lost after refresh.');
+      }
+    }
+
+    // =========================================================================
+    // 3. UI RENDERING FUNCTIONS
+    // =========================================================================
+
+    function renderGallery() {
+      const grid = document.getElementById('photoGalleryGrid');
+      if (!grid) return;
+
+      grid.innerHTML = GALLERY_SLOTS.map((slot, index) => {
+        const savedImg = appState.customPhotos && appState.customPhotos[index];
+        if (savedImg) {
+          return `
+            <div class="group relative rounded-2xl bg-cream-50 border border-latte-200 p-2.5 shadow-2xs flex flex-col">
+              <button type="button" onclick="openLightbox(${index})"
+                class="relative w-full aspect-[4/5] overflow-hidden rounded-xl bg-cream-100 focus:outline-none">
+                <img src="${savedImg}" alt="${slot.title}"
+                  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded-full bg-latte-800/75 text-cream-50 text-[10px] font-medium">
+                  Full View ✨
+                </span>
+              </button>
+              <div class="mt-2 px-1 text-left">
+                <p class="font-serif text-sm font-bold text-latte-800 truncate">${slot.title}</p>
+                <p class="text-[11px] text-latte-500 line-clamp-1">${slot.caption}</p>
+              </div>
+            </div>
+          `;
+        }
+
+        return `
+          <button type="button" onclick="triggerPhotoSlotPicker(${index})"
+            class="group rounded-2xl bg-cream-50/90 hover:bg-blush-50/70 active:scale-[0.98] border-2 border-dashed border-latte-300 hover:border-blush-400 p-3 transition flex flex-col items-center justify-center text-center aspect-[4/5]">
+            <div class="w-10 h-10 rounded-full bg-blush-100 text-blush-500 flex items-center justify-center text-lg mb-2 group-hover:scale-110 transition-transform">
+              📷
+            </div>
+            <p class="font-serif text-sm font-bold text-latte-800 leading-tight">${slot.title}</p>
+            <p class="text-[10px] text-latte-500 mt-1 line-clamp-2">${slot.caption}</p>
+            <span class="mt-2.5 px-2.5 py-1 rounded-full bg-white border border-blush-200 text-[10px] font-semibold text-blush-500 group-hover:bg-blush-500 group-hover:text-white transition">
+              + Add Photo
+            </span>
+          </button>
+        `;
+      }).join('');
+    }
+
+    function renderChristmasOptions() {
+      const grid = document.getElementById('christmasOptionsGrid');
+      const selectedText = document.getElementById('christmasSelectedText');
+      if (!grid) return;
+
+      grid.innerHTML = CHRISTMAS_OPTIONS.map((opt) => {
+        const isSelected = appState.christmasChoice === opt.id;
+        return `
+          <button type="button" onclick="selectChristmasGift('${opt.id}')"
+            class="text-left rounded-2xl p-4 border transition active:scale-[0.98] flex flex-col justify-between ${
+              isSelected
+                ? 'bg-blush-50 border-blush-400 shadow-xs'
+                : 'bg-cream-50 hover:bg-cream-100 border-latte-200'
+            }">
+            <div>
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-xl select-none">${opt.emoji}</span>
+                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider ${
+                  isSelected
+                    ? 'bg-blush-500 text-white'
+                    : 'bg-cream-200 text-latte-700'
+                }">
+                  ${isSelected ? 'Selected ✓' : 'Choose'}
+                </span>
+              </div>
+              <h3 class="font-serif text-lg font-bold text-latte-800 mt-2">${opt.title}</h3>
+              <p class="text-xs text-latte-600 mt-1 leading-relaxed">${opt.desc}</p>
+            </div>
+          </button>
+        `;
+      }).join('');
+
+      if (selectedText) {
+        const chosen = CHRISTMAS_OPTIONS.find((o) => o.id === appState.christmasChoice);
+        selectedText.textContent = chosen
+          ? `🎄 Locked In For Christmas: ${chosen.emoji} ${chosen.title} — Coming with love from Azzi! 🤍`
+          : 'Tap one cozy Christmas option above to lock in your wish ✨';
+      }
+    }
+
+    function renderCoupons() {
+      const grid = document.getElementById('couponGrid');
+      if (!grid) return;
+
+      grid.innerHTML = COUPONS_DATA.map((c) => {
+        const isRedeemed = appState.redeemedCoupons.includes(c.id);
+        return `
+          <button type="button" onclick="toggleCoupon('${c.id}')"
+            class="text-left rounded-2xl p-4 border transition active:scale-[0.98] flex flex-col justify-between ${
+              isRedeemed
+                ? 'bg-blush-50 border-blush-300 opacity-90'
+                : 'bg-cream-50 hover:bg-cream-100 border-latte-200'
+            }">
+            <div>
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-xl select-none">${c.emoji}</span>
+                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider ${
+                  isRedeemed
+                    ? 'bg-blush-500 text-white'
+                    : 'bg-cream-200 text-latte-700'
+                }">
+                  ${isRedeemed ? 'Redeemed ✓' : 'Tap to Redeem'}
+                </span>
+              </div>
+              <h3 class="font-serif text-lg font-bold text-latte-800 mt-2 ${isRedeemed ? 'line-through decoration-blush-400' : ''}">
+                ${c.title}
+              </h3>
+              <p class="text-xs text-latte-600 mt-1 leading-relaxed">
+                ${c.desc}
+              </p>
+            </div>
+          </button>
+        `;
+      }).join('');
+    }
+
+    function renderAffirmations() {
+      const spotlightNum = document.getElementById('spotlightNumber');
+      const spotlightText = document.getElementById('spotlightText');
+      const spotlightTag = document.getElementById('spotlightTag');
+      const grid = document.getElementById('affirmationsGrid');
+
+      const idx = Math.max(0, Math.min(AFFIRMATIONS_20.length - 1, appState.activeAffirmationIndex || 0));
+      const activeItem = AFFIRMATIONS_20[idx];
+
+      if (spotlightNum) spotlightNum.textContent = `#${idx + 1}`;
+      if (spotlightText) spotlightText.textContent = `“${activeItem.text}”`;
+      if (spotlightTag) spotlightTag.textContent = activeItem.tag;
+
+      if (!grid) return;
+      grid.innerHTML = AFFIRMATIONS_20.map((item, i) => {
+        const selected = i === idx;
+        return `
+          <button type="button" onclick="selectAffirmation(${i})"
+            class="text-left rounded-2xl p-3.5 border transition active:scale-[0.99] flex items-start gap-2.5 ${
+              selected
+                ? 'bg-blush-50 border-blush-400 shadow-xs'
+                : 'bg-cream-50/80 hover:bg-cream-100 border-latte-200/80'
+            }">
+            <span class="shrink-0 w-6 h-6 rounded-full text-[11px] font-bold flex items-center justify-center mt-0.5 ${
+              selected ? 'bg-blush-500 text-white' : 'bg-cream-200 text-latte-700'
+            }">
+              ${i + 1}
+            </span>
+            <div class="min-w-0">
+              <p class="text-xs text-latte-800 leading-relaxed font-medium">${item.text}</p>
+              <span class="inline-block text-[10px] text-latte-500 mt-1">${item.tag}</span>
+            </div>
+          </button>
+        `;
+      }).join('');
+    }
+
+    // =========================================================================
+    // 4. INTERACTIVE HANDLERS (CANDLES, CUDDLES, GALLERY, COUPONS, GIFTS)
+    // =========================================================================
+
+    function showToast(message) {
+      const banner = document.getElementById('toastBanner');
+      if (!banner) return;
+      banner.textContent = message;
+      banner.classList.remove('opacity-0');
+      banner.classList.add('opacity-100');
+      clearTimeout(banner._hideTimer);
+      banner._hideTimer = setTimeout(() => {
+        banner.classList.remove('opacity-100');
+        banner.classList.add('opacity-0');
+      }, 2400);
+    }
+
+    function updateCandleUI(withSoundAndSmoke = false) {
+      const flame1 = document.getElementById('candleFlame1');
+      const flame2 = document.getElementById('candleFlame2');
+      const smoke1 = document.getElementById('candleSmoke1');
+      const smoke2 = document.getElementById('candleSmoke2');
+      const btnEmoji = document.getElementById('candleBtnEmoji');
+      const btnText = document.getElementById('candleBtnText');
+      const wishMsg = document.getElementById('candleWishMessage');
+
+      if (appState.candlesOut) {
+        if (flame1) flame1.classList.add('flame-extinguished');
+        if (flame2) flame2.classList.add('flame-extinguished');
+        if (btnEmoji) btnEmoji.textContent = '✨';
+        if (btnText) btnText.textContent = 'Relight 20th Candles';
+        if (wishMsg) {
+          wishMsg.textContent = 'Yayyy!! Your 20th birthday wish has been sent to the stars, Nanaaaaa! 🤍✨';
+        }
+        if (withSoundAndSmoke) {
+          playBlowWindSound();
+          puffSmoke();
+          emojiBurst(window.innerWidth / 2, window.innerHeight / 2, 12);
+          launchCozyConfetti(55);
+          showToast('Wish made! Happy 20th Birthday Nanaaaaa 🎂🤍');
+        }
+      } else {
+        if (flame1) flame1.classList.remove('flame-extinguished');
+        if (flame2) flame2.classList.remove('flame-extinguished');
+        if (btnEmoji) btnEmoji.textContent = '🕯️';
+        if (btnText) btnText.textContent = 'Make a Wish & Blow Out Candles';
+        if (wishMsg) {
+          wishMsg.textContent = 'Close your eyes, make your 20th birthday wish, and tap the button above 🤍';
+        }
+      }
+    }
+
+function puffSmoke() {
+      ['candleFlame1', 'candleFlame2'].forEach((id) => {
+        const flame = document.getElementById(id);
+        if (!flame || !flame.parentNode) return;
+        for (let i = 0; i < 7; i++) {
+          const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+          c.setAttribute('cx', 15); c.setAttribute('cy', -4);
+          c.setAttribute('r', 2.5 + Math.random() * 2.5);
+          c.setAttribute('class', 'smoke-blob');
+          c.style.cssText = `--sx:${(Math.random() - .5) * 18}px;animation-delay:${i * 0.17}s;animation-duration:${1.8 + Math.random() * .8}s`;
+          flame.parentNode.appendChild(c);
+          setTimeout(() => c.remove(), 3400);
+        }
+      });
+    }
+
+    function toggleCandles() {
+      appState.candlesOut = !appState.candlesOut;
+      saveState();
+      updateCandleUI(true);
+    }
+
+    function triggerCuddle(type) {
+      appState.cuddleCount = (appState.cuddleCount || 0) + 1;
+      saveState();
+
+      const counterEl = document.getElementById('cuddleCounter');
+      const feedbackEl = document.getElementById('cuddleFeedbackText');
+      const stageBtn = document.getElementById('cuddleStageBtn');
+
+      if (counterEl) counterEl.textContent = appState.cuddleCount;
+
+      const messages = {
+        teddy: [
+          '🧸 Azzi’s Warm Teddy wraps both arms tightly around Nanaa + soft forehead kiss! Mwah 🤎',
+          '🧸 Big cozy bear hug delivered straight to Poitiers! You are doing amazing, baby 🤍',
+          '🧸 Teddy says: "Take a deep breath, cutie patoti—Azzi is always proud of you!" 🤎✨'
+        ],
+        bunny: [
+          '🐰 Nana’s Sweet Bunny hops into your lap with soft snuggles & gentle encouragement! 🌸',
+          '🐰 Bunny cuddles you close and whispers: "You’re going to pass every law exam, Bibi!" 🤍',
+          '🐰 Soft bunny ears & warm cheek snuggles for the sweetest 20-year-old girl! 🌸✨'
+        ],
+        hug: [
+          '🧸🤍🐰 Double Teddy + Bunny group hug! Wrapping Nanaa in the warmest blanket ever!',
+          '🧸🤍🐰 Tightest cuddle squeezed and delivered! Saving a million real hugs for Cambridge!',
+          '🧸🤍🐰 Teddy & Bunny both cheer: "Happy 20th Birthday, Nanaaaaa! Mwah mwah!" ✨'
+        ]
+      };
+
+      const pool = messages[type] || messages.hug;
+      const chosen = pool[appState.cuddleCount % pool.length];
+      if (feedbackEl) feedbackEl.textContent = chosen;
+
+      if (stageBtn) {
+        stageBtn.classList.remove('cuddle-squeeze-active');
+        void stageBtn.offsetWidth;
+        stageBtn.classList.add('cuddle-squeeze-active');
+      }
+
+      launchCozyConfetti(24);
+      if (appState.cuddleCount === 1) showToast('Your very first cuddle! 🧸🤍');
+      if (appState.cuddleCount % 10 === 0) {
+        launchCozyConfetti(70);
+        showToast(`🎉 ${appState.cuddleCount} cuddles delivered! Teddy is dizzy with love 🧸💫`);
+      }
+    }
+
+    function triggerPhotoSlotPicker(slotIndex) {
+      activePhotoSlotIndex = slotIndex;
+      const picker = document.getElementById('nanaPhotoPicker');
+      if (picker) {
+        picker.value = '';
+        picker.click();
+      }
+    }
+
+    function handleNanaPhotoUpload(event) {
+      const file = event && event.target && event.target.files && event.target.files[0];
+      if (!file || activePhotoSlotIndex === null) return;
+
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        const img = new Image();
+        img.onload = () => {
+          try {
+            const maxDim = 720;
+            let w = img.width;
+            let h = img.height;
+            if (w > maxDim || h > maxDim) {
+              if (w > h) {
+                h = Math.round((h * maxDim) / w);
+                w = maxDim;
+              } else {
+                w = Math.round((w * maxDim) / h);
+                h = maxDim;
+              }
+            }
+            const tempCanvas = document.createElement('canvas');
+            tempCanvas.width = w;
+            tempCanvas.height = h;
+            const tCtx = tempCanvas.getContext('2d');
+            tCtx.drawImage(img, 0, 0, w, h);
+            const compressedDataUrl = tempCanvas.toDataURL('image/jpeg', 0.82);
+
+            appState.customPhotos[activePhotoSlotIndex] = compressedDataUrl;
+            saveState();
+            renderGallery();
+            launchCozyConfetti(25);
+            showToast('Cute photo added to gallery! 📸🤍');
+          } catch (err) {
+            showToast('Could not process photo—please try another image.');
+          }
+        };
+        img.onerror = () => showToast('Could not read this image—please try another one.');
+        img.src = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function openLightbox(slotIndex) {
+      const savedSrc = appState.customPhotos && appState.customPhotos[slotIndex];
+      const slot = GALLERY_SLOTS[slotIndex];
+      if (!savedSrc || !slot) return;
+
+      const modal = document.getElementById('photoLightbox');
+      const imgEl = document.getElementById('lightboxImg');
+      const titleEl = document.getElementById('lightboxTitle');
+      const capEl = document.getElementById('lightboxCaption');
+      const replaceBtn = document.getElementById('lightboxReplaceBtn');
+      const removeBtn = document.getElementById('lightboxRemoveBtn');
+
+      if (imgEl) imgEl.src = savedSrc;
+      if (titleEl) titleEl.textContent = slot.title;
+      if (capEl) capEl.textContent = slot.caption;
+
+      if (replaceBtn) {
+        replaceBtn.onclick = () => {
+          closeLightbox();
+          triggerPhotoSlotPicker(slotIndex);
+        };
+      }
+      if (removeBtn) {
+        removeBtn.onclick = () => {
+          delete appState.customPhotos[slotIndex];
+          saveState();
+          renderGallery();
+          closeLightbox();
+          showToast('Photo slot cleared ✨');
+        };
+      }
+
+      if (modal) modal.classList.remove('hidden');
+    }
+
+    function closeLightbox(event) {
+      if (event && event.target && event.target.id !== 'photoLightbox') return;
+      const modal = document.getElementById('photoLightbox');
+      if (modal) modal.classList.add('hidden');
+    }
+
+    function toggleCoupon(couponId) {
+      const idx = appState.redeemedCoupons.indexOf(couponId);
+      if (idx === -1) {
+        appState.redeemedCoupons.push(couponId);
+        launchCozyConfetti(28);
+        showToast(COUPON_MSG[couponId] || 'Coupon redeemed! Valid anytime for Nanaa 🎟️🤍');
+      } else {
+        appState.redeemedCoupons.splice(idx, 1);
+        showToast('Coupon reset to available ✨');
+      }
+      saveState();
+      renderCoupons();
+    }
+
+    function selectAffirmation(index) {
+      appState.activeAffirmationIndex = index;
+      saveState();
+      renderAffirmations();
+      launchCozyConfetti(18);
+    }
+
+    function nextAffirmation() {
+      appState.activeAffirmationIndex = ((appState.activeAffirmationIndex || 0) + 1) % AFFIRMATIONS_20.length;
+      saveState();
+      renderAffirmations();
+      launchCozyConfetti(20);
+    }
+
+    function updateJacketUI() {
+      const closedBox = document.getElementById('jacketClosedBox');
+      const revealedBox = document.getElementById('jacketRevealedBox');
+      if (appState.jacketRevealed) {
+        if (closedBox) closedBox.classList.add('hidden');
+        if (revealedBox) revealedBox.classList.remove('hidden');
+      } else {
+        if (closedBox) closedBox.classList.remove('hidden');
+        if (revealedBox) revealedBox.classList.add('hidden');
+      }
+    }
+
+    const JACKET_HUGS = [
+      'I’m wrapping you in the warmest hug through this jacket 🤍',
+      'Zip up, cutie. Poitiers can’t be colder than my love for you 🧸',
+      'Every time you wear it, imagine my arms around you ✨',
+      'Pockets for your hands, and for my kisses too 😘',
+      'Warm jacket + warm heart = the coziest Nana 🧥🌸'
+    ];
+    let giftBusy = false, jacketHugIdx = 0;
+
+    function revealJacketGift() {
+      if (giftBusy) return;
+      giftBusy = true;
+      const gift = document.getElementById('giftEmoji');
+      if (gift) gift.classList.add('gift-shake');
+      launchCozyConfetti(20);
+      setTimeout(() => {
+        appState.jacketRevealed = true;
+        saveState();
+        if (gift) gift.classList.remove('gift-shake');
+        updateJacketUI();
+        const art = document.querySelector('.jacket-art');
+        if (art) { art.style.animation = 'none'; void art.offsetWidth; art.style.animation = ''; }
+        launchCozyConfetti(80);
+        setTimeout(() => launchCozyConfetti(60), 500);
+        emojiBurst(window.innerWidth / 2, window.innerHeight / 2, 14);
+        showToast('Surprise unwrapped! A cozy new jacket for Nanaa 🧥🤍');
+        giftBusy = false;
+      }, 900);
+    }
+
+    function hugJacket() {
+      const t = document.getElementById('jacketHugText');
+      if (t) t.textContent = JACKET_HUGS[jacketHugIdx % JACKET_HUGS.length];
+      jacketHugIdx += 1;
+      launchCozyConfetti(30);
+    }
+
+    function rewrapJacket() {
+      appState.jacketRevealed = false;
+      saveState();
+      updateJacketUI();
+    }
+
+    function selectChristmasGift(optionId) {
+      appState.christmasChoice = optionId;
+      saveState();
+      renderChristmasOptions();
+      launchCozyConfetti(30);
+      showToast('Christmas treat wish locked in! 🎄🤍');
+    }
+
+    function saveNanaReply() {
+      const input = document.getElementById('nanaReplyInput');
+      const status = document.getElementById('replyStatusMsg');
+      if (!input) return;
+
+      appState.nanaReply = input.value.trim();
+      saveState();
+      if (status) {
+        status.textContent = appState.nanaReply ? 'Saved safely on your device 💌' : 'Note cleared ✨';
+      }
+      launchCozyConfetti(28);
+      showToast('Birthday note saved! 💌');
+    }
+
+    function copyFullSummaryForAzzi() {
+      const input = document.getElementById('nanaReplyInput');
+      const noteText = input ? input.value.trim() : appState.nanaReply;
+      const chosenXmas = CHRISTMAS_OPTIONS.find((o) => o.id === appState.christmasChoice);
+      const redeemedNames = COUPONS_DATA
+        .filter((c) => appState.redeemedCoupons.includes(c.id))
+        .map((c) => c.title);
+
+      const summary = [
+        'Hiii Azzi!! 🧸🤍✨ (From Nana · 20th Birthday)',
+        noteText ? `💌 My Note: "${noteText}"` : '💌 Thank you for my 20th birthday letter & surprise jacket!',
+        `🤗 Cuddles Sent: ${appState.cuddleCount}`,
+        chosenXmas ? `🎄 My Christmas Wish: ${chosenXmas.title}` : '🎄 Christmas Wish: Picking soon!',
+        redeemedNames.length ? `🎟️ Coupons Redeemed: ${redeemedNames.join(', ')}` : ''
+      ].filter(Boolean).join('\n');
+
+      const done = () => showToast('Copied birthday reply & wishes to clipboard! 📋🤍');
+      const fail = () => showToast('Could not copy. Please select the text manually.');
+
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(summary).then(done).catch(fail);
+      } else {
+        const ta = document.createElement('textarea');
+        ta.value = summary;
+        ta.style.cssText = 'position:fixed;opacity:0';
+        document.body.appendChild(ta);
+        ta.select();
+        let ok = false;
+        try { ok = document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(ta);
+        ok ? done() : fail();
+      }
+    }
+
+    // =========================================================================
+    // 5. LIVE POITIERS COUNTDOWN (NOVEMBER 17, 2026)
+    // =========================================================================
+    function updatePoitiersCountdown() {
+      try {
+        const now = new Date();
+        const formatter = new Intl.DateTimeFormat('en-GB', {
+          timeZone: 'Europe/Paris',
+          year: 'numeric',
+          month: '2-digit',
+          day: '2-digit',
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit',
+          hourCycle: 'h23'
+        });
+        const parts = formatter.formatToParts(now);
+        const map = {};
+        parts.forEach((p) => {
+          if (p.type !== 'literal') map[p.type] = Number(p.value);
+        });
+
+        const parisNowUtc = Date.UTC(
+          map.year,
+          (map.month || 1) - 1,
+          map.day || 1,
+          (map.hour || 0) % 24,
+          map.minute || 0,
+          map.second || 0
+        );
+        const targetParisUtc = Date.UTC(2026, 10, 17, 0, 0, 0);
+        const diff = targetParisUtc - parisNowUtc;
+
+        const dEl = document.getElementById('cdDays');
+        const hEl = document.getElementById('cdHours');
+        const mEl = document.getElementById('cdMinutes');
+        const sEl = document.getElementById('cdSeconds');
+        const subEl = document.getElementById('countdownSubtitle');
+
+        if (diff <= 0) {
+          if (!window.__bdayFired) { window.__bdayFired = true; launchCozyConfetti(60); }
+          if (dEl) dEl.textContent = '🎂';
+          if (hEl) hEl.textContent = '🎉';
+          if (mEl) mEl.textContent = '🧸';
+          if (sEl) sEl.textContent = '🤍';
+          if (subEl) subEl.textContent = '🎂 It’s November 17, 2026 in Poitiers! Happy 20th Birthday, Lana Raynaud! 🤍';
+          return;
+        }
+
+        const totalSec = Math.floor(diff / 1000);
+        const days = Math.floor(totalSec / 86400);
+        const hours = Math.floor((totalSec % 86400) / 3600);
+        const mins = Math.floor((totalSec % 3600) / 60);
+        const secs = totalSec % 60;
+
+        if (dEl) dEl.textContent = String(days).padStart(2, '0');
+        if (hEl) hEl.textContent = String(hours).padStart(2, '0');
+        if (mEl) mEl.textContent = String(mins).padStart(2, '0');
+        if (sEl) sEl.textContent = String(secs).padStart(2, '0');
+      } catch (e) {
+        // Fallback if Intl timeZone is unavailable
+      }
+    }
+
+    // =========================================================================
+    // 6. COZY MUSIC BOX "HAPPY BIRTHDAY" (WEB AUDIO API, WALTZ 3/4 + REVERB)
+    // =========================================================================
+    let audioContext = null;
+    let isMusicPlaying = false;
+    let musicTimer = null;
+    let musicSession = null;
+
+    const SPB = 60 / 100;      // 100 BPM waltz
+    const CYCLE_BEATS = 24;    // one full song = 24 beats, next pickup follows immediately
+    const MELODY = [ // [frequency Hz, beats]
+      [392, .75], [392, .25], [440, 1], [392, 1], [523.25, 1], [493.88, 2],
+      [392, .75], [392, .25], [440, 1], [392, 1], [587.33, 1], [523.25, 2],
+      [392, .75], [392, .25], [783.99, 1], [659.25, 1], [523.25, 1], [493.88, 1], [440, 1],
+      [698.46, .75], [698.46, .25], [659.25, 1], [523.25, 1], [587.33, 1], [523.25, 2]
+    ];
+    const CHORDS = {
+      C:  { bass: 130.81, notes: [261.63, 329.63, 392.00] },
+      G7: { bass: 98.00,  notes: [246.94, 293.66, 349.23] },
+      F:  { bass: 87.31,  notes: [261.63, 349.23, 440.00] }
+    };
+    const BARS = ['C', 'G7', 'G7', 'C', 'C', ['G7', 'F'], ['C', 'G7'], 'C'];
+    const SEMITONES = [0, 0, 2, 2, 4, 4, 2, 0]; // key lifts every 2 rounds, then glides back
+    let nextStart = 0, cycleNo = 0;
+
+    function ensureAudioContext() {
+      if (!audioContext) {
+        const AC = window.AudioContext || window.webkitAudioContext;
+        if (AC) audioContext = new AC();
+      }
+      if (audioContext && audioContext.state === 'suspended') audioContext.resume();
+      return audioContext;
+    }
+
+    function makeImpulse(ctx) {
+      const len = Math.floor(ctx.sampleRate * 2.4);
+      const buf = ctx.createBuffer(2, len, ctx.sampleRate);
+      for (let c = 0; c < 2; c++) {
+        const d = buf.getChannelData(c);
+        for (let i = 0; i < len; i++) d[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / len, 2.5);
+      }
+      return buf;
+    }
+
+    function env(g, t, peak, dec) {
+      g.gain.setValueAtTime(0.0001, t);
+      g.gain.exponentialRampToValueAtTime(peak, t + 0.006);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + dec);
+    }
+
+    // Music-box tine: fundamental + shimmering partials
+    function bell(ctx, bus, f, t, dur, vol = 1) {
+      [[1, .11, 1.9], [2, .045, 1.0], [3.01, .02, .6], [5.4, .008, .3]].forEach(([m, a, d]) => {
+        const o = ctx.createOscillator(), g = ctx.createGain();
+        o.type = 'sine';
+        o.frequency.value = f * m;
+        env(g, t, a * vol, d + dur * 0.5);
+        o.connect(g); g.connect(bus);
+        o.start(t); o.stop(t + d + dur * 0.5 + 0.1);
+      });
+    }
+
+    // Soft felt bass / chord stab
+    function warm(ctx, bus, f, t, peak, dec, cutoff) {
+      const o = ctx.createOscillator(), g = ctx.createGain(), lp = ctx.createBiquadFilter();
+      o.type = 'triangle';
+      o.frequency.value = f;
+      lp.type = 'lowpass';
+      lp.frequency.value = cutoff;
+      env(g, t, peak, dec);
+      o.connect(lp); lp.connect(g); g.connect(bus);
+      o.start(t); o.stop(t + dec + 0.1);
+    }
+
+    function pad(ctx, bus, freqs, t, dur) {
+      freqs.forEach((f) => {
+        const o = ctx.createOscillator(), g = ctx.createGain();
+        o.type = 'sine';
+        o.frequency.value = f;
+        g.gain.setValueAtTime(0.0001, t);
+        g.gain.linearRampToValueAtTime(0.012, t + 0.35);
+        g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+        o.connect(g); g.connect(bus);
+        o.start(t); o.stop(t + dur + 0.1);
+      });
+    }
+
+    function playSong(ctx, bus, t0, n) {
+      const r = Math.pow(2, SEMITONES[n % SEMITONES.length] / 12);
+      const layer = n % 4; // 0 plain, 1 + harp sparkle, 2-3 + octave bells
+      let beat = 0;
+      MELODY.forEach(([f, b]) => {
+        const t = t0 + beat * SPB;
+        bell(ctx, bus, f * r, t, b * SPB);
+        if (layer >= 2) bell(ctx, bus, f * r * 2, t, b * SPB, 0.35);
+        beat += b;
+      });
+      BARS.forEach((bar, i) => {
+        const s = 1 + i * 3;
+        const c1 = CHORDS[Array.isArray(bar) ? bar[0] : bar];
+        const c2 = CHORDS[Array.isArray(bar) ? bar[1] : bar];
+        const t = t0 + s * SPB;
+        warm(ctx, bus, c1.bass * r, t, 0.16, 1.2, 500);
+        pad(ctx, bus, c1.notes.map((x) => x * r), t, 3 * SPB + 0.6);
+        (i < 7 ? [1, 2] : [1]).forEach((k) => c2.notes.forEach((x) =>
+          warm(ctx, bus, x * r, t0 + (s + k) * SPB, 0.022, 0.55, 1400)));
+        if (layer >= 1) {
+          [0, .5, 1, 1.5, 2, 2.5].filter((k) => i < 7 || k < 2).forEach((k, j) =>
+            bell(ctx, bus, c1.notes[j % 3] * 2 * r, t0 + (s + k) * SPB, SPB, 0.3));
+        }
+      });
+    }
+
+    // Keeps scheduling the next rounds ahead of time, so the music never gaps
+    function pumpMusic() {
+      if (!isMusicPlaying || !audioContext || !musicSession) return;
+      while (nextStart - audioContext.currentTime < 5) {
+        playSong(audioContext, musicSession.bus, nextStart, cycleNo);
+        nextStart += CYCLE_BEATS * SPB;
+        cycleNo += 1;
+      }
+      musicTimer = setTimeout(pumpMusic, 400);
+    }
+
+    function startMusic() {
+      const ctx = ensureAudioContext();
+      if (!ctx) return;
+      const out = ctx.createGain();
+      const comp = ctx.createDynamicsCompressor();
+      const bus = ctx.createGain();
+      out.gain.setValueAtTime(0.0001, ctx.currentTime);
+      out.gain.linearRampToValueAtTime(0.9, ctx.currentTime + 0.4);
+      out.connect(comp); comp.connect(ctx.destination);
+      bus.connect(out);
+
+      // Reverb
+      const rev = ctx.createConvolver();
+      const wet = ctx.createGain();
+      rev.buffer = makeImpulse(ctx);
+      wet.gain.value = 0.3;
+      bus.connect(rev); rev.connect(wet); wet.connect(out);
+
+      // Soft echo
+      const dl = ctx.createDelay(1);
+      const fb = ctx.createGain();
+      const lp = ctx.createBiquadFilter();
+      const dg = ctx.createGain();
+      dl.delayTime.value = SPB * 0.75;
+      fb.gain.value = 0.22;
+      dg.gain.value = 0.16;
+      lp.type = 'lowpass';
+      lp.frequency.value = 2600;
+      bus.connect(dl); dl.connect(lp); lp.connect(fb); fb.connect(dl);
+      lp.connect(dg); dg.connect(out);
+
+      musicSession = { out, comp, bus };
+      nextStart = ctx.currentTime + 0.15;
+      cycleNo = 0;
+      pumpMusic();
+    }
+
+    function stopMusic() {
+      clearTimeout(musicTimer);
+      const s = musicSession;
+      musicSession = null;
+      if (!s || !audioContext) return;
+      const t = audioContext.currentTime;
+      s.out.gain.cancelScheduledValues(t);
+      s.out.gain.setValueAtTime(Math.max(s.out.gain.value, 0.0001), t);
+      s.out.gain.exponentialRampToValueAtTime(0.0001, t + 0.25);
+      setTimeout(() => {
+        try { s.out.disconnect(); s.comp.disconnect(); } catch (e) {}
+      }, 600);
+    }
+
+    function toggleBirthdayMusic() {
+      const label = document.getElementById('musicLabel');
+      const icon = document.getElementById('musicIcon');
+      const eq = document.getElementById('eqVisualizer');
+      const btn = document.getElementById('musicToggleBtn');
+
+      isMusicPlaying = !isMusicPlaying;
+      if (isMusicPlaying) startMusic(); else stopMusic();
+
+      if (label) label.textContent = isMusicPlaying ? 'Pause Music Box' : 'Play Music Box';
+      if (icon) icon.textContent = isMusicPlaying ? '🎶' : '🎵';
+      if (eq) eq.classList.toggle('eq-paused', !isMusicPlaying);
+      if (btn) btn.setAttribute('aria-pressed', String(isMusicPlaying));
+    }
+
+    // Pause the music box when opening Apple Music so the two don't overlap
+    function pauseMusicBox() {
+      if (isMusicPlaying) toggleBirthdayMusic();
+    }
+
+    function playBlowWindSound() {
+      try {
+        const ctx = ensureAudioContext();
+        if (!ctx) return;
+        const bufferSize = ctx.sampleRate * 0.45;
+        const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
+        const data = buffer.getChannelData(0);
+        for (let i = 0; i < bufferSize; i++) {
+          data[i] = (Math.random() * 2 - 1) * (1 - i / bufferSize);
+        }
+
+        const noise = ctx.createBufferSource();
+        noise.buffer = buffer;
+
+        const filter = ctx.createBiquadFilter();
+        filter.type = 'lowpass';
+        filter.frequency.setValueAtTime(520, ctx.currentTime);
+
+        const gain = ctx.createGain();
+        gain.gain.setValueAtTime(0.06, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + 0.45);
+
+        noise.connect(filter);
+        filter.connect(gain);
+        gain.connect(ctx.destination);
+        noise.start();
+      } catch (e) {
+        // Ignore if audio is blocked
+      }
+    }
+
+    // =========================================================================
+    // 7. ZERO-LAG CONFETTI & AUTUMN PETALS CANVAS
+    // =========================================================================
+    const confettiCanvas = document.getElementById('celebrationCanvas');
+    const confettiCtx = confettiCanvas ? confettiCanvas.getContext('2d') : null;
+    let confettiParticles = [];
+    let confettiAnimId = null;
+
+    function resizeConfettiCanvas() {
+      if (!confettiCanvas) return;
+      confettiCanvas.width = window.innerWidth;
+      confettiCanvas.height = window.innerHeight;
+    }
+
+    function launchCozyConfetti(count = 40) {
+      if (!confettiCanvas || !confettiCtx) return;
+      resizeConfettiCanvas();
+      const colors = ['#E48D9F', '#F2B8C3', '#DEC2A2', '#C8A37E', '#CC687D', '#FFF3B0'];
+      const maxParticles = 95;
+
+      for (let i = 0; i < count; i++) {
+        if (confettiParticles.length >= maxParticles) break;
+        confettiParticles.push({
+          x: Math.random() * confettiCanvas.width,
+          y: -15 - Math.random() * 60,
+          vx: (Math.random() - 0.5) * 3.2,
+          vy: 2.2 + Math.random() * 3.1,
+          size: 5 + Math.random() * 5,
+          color: colors[i % colors.length],
+          rot: Math.random() * Math.PI * 2,
+          vRot: (Math.random() - 0.5) * 0.12,
+          isHeart: i % 4 === 0
+        });
+      }
+
+      if (!confettiAnimId) {
+        animateConfetti();
+      }
+    }
+
+    function animateConfetti() {
+      if (!confettiCanvas || !confettiCtx) return;
+      confettiCtx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+
+      for (let i = confettiParticles.length - 1; i >= 0; i--) {
+        const p = confettiParticles[i];
+        p.x += p.vx;
+        p.y += p.vy;
+        p.rot += p.vRot;
+
+        if (p.y > confettiCanvas.height + 20) {
+          confettiParticles.splice(i, 1);
+          continue;
+        }
+
+        confettiCtx.save();
+        confettiCtx.translate(p.x, p.y);
+        confettiCtx.rotate(p.rot);
+        confettiCtx.fillStyle = p.color;
+
+        if (p.isHeart) {
+          const s = p.size * 0.55;
+          confettiCtx.beginPath();
+          confettiCtx.moveTo(0, s * 0.35);
+          confettiCtx.bezierCurveTo(-s, -s * 0.45, -s * 0.5, -s * 1.15, 0, -s * 0.45);
+          confettiCtx.bezierCurveTo(s * 0.5, -s * 1.15, s, -s * 0.45, 0, s * 0.35);
+          confettiCtx.fill();
+        } else {
+          confettiCtx.fillRect(-p.size * 0.6, -p.size * 0.35, p.size * 1.2, p.size * 0.7);
+        }
+        confettiCtx.restore();
+      }
+
+      if (confettiParticles.length > 0) {
+        confettiAnimId = requestAnimationFrame(animateConfetti);
+      } else {
+        confettiAnimId = null;
+        confettiCtx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+      }
+    }
+
+// =========================================================================
+    // 7b. SURPRISES ON EVERY BUTTON + CUTE EXTRAS
+    // =========================================================================
+    const SURPRISES = [
+      '🤍 Azzi is thinking of you right now!', '🧸 One imaginary bear hug, delivered!',
+      '🌸 You are doing amazing, Nana!', '✨ A tiny wish just landed for you',
+      '🐰 Bunny says: drink some water, cutie!', '🍓 Sweet things are coming your way',
+      '🎀 You have the prettiest soul I know', '💌 A flying kiss is on its way to Poitiers',
+      '🦋 Your smile just made someone’s day', '⭐ Future lawyer in the making!',
+      '☁️ Take a deep breath, I’m proud of you', '🥐 Croissant date soon?', '🍰 Cake calories don’t count today!', '🌙 Sweet dreams are on their way', '🎶 You are my favorite song', '🧁 You’re the cherry on top, Nana', '🪄 Poof! Instant good mood', '💐 Roses are red, Nana is cute', '🐻 Teddy just blushed!', '🌈 Something lovely is coming'
+    ];
+    const BIG_SURPRISES = [
+      ['🧸', 'Surprise hug!', 'Teddy just squeezed you extra tight. Hold it for 10 seconds 🤍'],
+      ['🎙️', 'Secret voice note', 'Azzi owes you one extra-long goodnight voice note tonight 🌙'],
+      ['🌷', 'Virtual flowers', 'A bouquet of the prettiest tulips just bloomed for you 🌷'],
+      ['☕', 'Sweet break', 'You earned a hot chocolate break. Go get one, Nanaa!'],
+      ['⚖️', 'Achievement unlocked', 'Brilliant Future Lawyer. Level 20 reached ✨'],
+      ['📸', 'Photo wish', 'Send Azzi a cute selfie today and make his whole week 📸'],
+      ['🎂', 'Birthday girl mode', 'Today you are officially allowed to be extra cute and extra spoiled 👑'],
+      ['🐰', 'Bunny hop', 'Bunny hopped 20 times for your 20th birthday! Boing boing 🐰'],
+      ['🌟', 'Wish upgrade', 'Your birthday wish just got upgraded to premium sparkle ✨'],
+      ['💌', 'Love letter drop', 'A tiny love letter just slid into your heart. Read it with a smile 💌']
+    ];
+const COUPON_MSG = {
+      'coffee-croissant': '🥐 Table for two reserved in Azzi’s heart!',
+      'movie-voice': '🎬 Pick the movie, I’ll bring the sleepy voice 🌙',
+      'study-snack': '🍓 Study pause activated! Snacks incoming',
+      'warm-hugs': '🧸 Hug loading… 100%! Squeeeeze 🤍',
+      'princess-morning': '👑 Royal sleep-in granted, Your Highness',
+      'flowers-plushie': '🌷 A little surprise is being picked just for you'
+    };
+    const BURST = ['🧸', '🐰', '🤍', '💗', '✨', '🌸', '🎀', '🍓', '🦋', '⭐'];
+    let surpriseClicks = 0, bubbleTimer = null;
+
+    function emojiBurst(x, y, n = 9) {
+      for (let i = 0; i < n; i++) {
+        const s = document.createElement('span');
+        const a = Math.random() * Math.PI * 2, d = 50 + Math.random() * 80;
+        s.className = 'burst-emoji';
+        s.textContent = BURST[Math.floor(Math.random() * BURST.length)];
+        s.style.cssText = `left:${x}px;top:${y}px;--dx:${Math.cos(a) * d}px;--dy:${Math.sin(a) * d - 60}px;--rot:${(Math.random() - .5) * 60}deg;font-size:${16 + Math.random() * 14}px`;
+        document.body.appendChild(s);
+        setTimeout(() => s.remove(), 1300);
+      }
+    }
+
+    function sparklePling() {
+      try {
+        const ctx = ensureAudioContext();
+        if (!ctx) return;
+        const f = [784, 880, 1046.5, 1174.66, 1318.5][Math.floor(Math.random() * 5)];
+        const o = ctx.createOscillator(), g = ctx.createGain();
+        o.type = 'sine'; o.frequency.value = f;
+        env(g, ctx.currentTime, 0.05, 0.6);
+        o.connect(g); g.connect(ctx.destination);
+        o.start(); o.stop(ctx.currentTime + 0.7);
+      } catch (e) {}
+    }
+
+    function showBubble(x, y) {
+      const b = document.getElementById('surpriseBubble');
+      if (!b) return;
+      b.textContent = SURPRISES[Math.floor(Math.random() * SURPRISES.length)];
+      b.style.left = Math.min(Math.max(x - 110, 8), Math.max(8, window.innerWidth - 270)) + 'px';
+      b.style.top = (y > 80 ? y - 64 : y + 24) + 'px';
+      b.classList.add('show');
+      clearTimeout(bubbleTimer);
+      bubbleTimer = setTimeout(() => b.classList.remove('show'), 2200);
+    }
+
+    function showBigSurprise() {
+      const m = document.getElementById('surpriseModal');
+      if (!m) return;
+      const [emoji, title, text] = BIG_SURPRISES[Math.floor(surpriseClicks / 5 - 1) % BIG_SURPRISES.length];
+      document.getElementById('sbEmoji').textContent = emoji;
+      document.getElementById('sbTitle').textContent = title;
+      document.getElementById('sbText').textContent = text;
+      m.classList.add('open');
+      launchCozyConfetti(60);
+    }
+
+    function initSurprises() {
+      const b = document.createElement('div');
+      b.id = 'surpriseBubble'; b.setAttribute('aria-live', 'polite');
+      const m = document.createElement('div');
+      m.id = 'surpriseModal';
+      m.innerHTML = '<div class="surprise-card" role="dialog" aria-label="Surprise">' +
+        '<div id="sbEmoji" class="text-6xl float-slow"></div>' +
+        '<h3 id="sbTitle" class="font-serif text-3xl font-bold text-latte-800 mt-2"></h3>' +
+        '<p id="sbText" class="text-sm text-latte-600 mt-2 leading-relaxed"></p>' +
+        '<button type="button" data-nosurprise class="mt-5 px-5 py-2.5 rounded-full bg-blush-500 hover:bg-blush-400 active:scale-95 text-white text-xs font-semibold transition">Aww, thank you 🤍</button></div>';
+      m.addEventListener('click', (e) => {
+        if (e.target === m || e.target.closest('[data-nosurprise]')) m.classList.remove('open');
+      });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') m.classList.remove('open'); });
+      document.body.append(b, m);
+
+      document.addEventListener('click', (e) => {
+        const el = e.target.closest('button, a');
+        if (!el || el.hasAttribute('data-nosurprise')) return;
+        surpriseClicks += 1;
+        const r = el.getBoundingClientRect();
+        const x = e.clientX || r.left + r.width / 2, y = e.clientY || r.top;
+        emojiBurst(x, y);
+        sparklePling();
+        showBubble(x, y);
+        if (surpriseClicks % 5 === 0) setTimeout(showBigSurprise, 350);
+      });
+    }
+
+    function initReveal() {
+      const els = Array.from(document.querySelectorAll('main > section, main > footer'));
+      if (!('IntersectionObserver' in window)) { els.forEach((e) => e.classList.add('in')); return; }
+      const io = new IntersectionObserver((entries) => entries.forEach((x) => {
+        if (x.isIntersecting) { x.target.classList.add('in'); io.unobserve(x.target); }
+      }), { threshold: 0.08 });
+      els.forEach((e) => io.observe(e));
+    }
+
+    function initFloaters() {
+      const em = ['🤍', '🧸', '🌸', '✨', '🐰', '💗'];
+      const box = document.createElement('div');
+      box.className = 'bg-floaters'; box.setAttribute('aria-hidden', 'true');
+      for (let i = 0; i < 14; i++) {
+        const s = document.createElement('span');
+        s.textContent = em[i % em.length];
+        s.style.cssText = `left:${Math.random() * 100}%;font-size:${12 + Math.random() * 14}px;animation-duration:${14 + Math.random() * 14}s;animation-delay:${-Math.random() * 20}s`;
+        box.appendChild(s);
+      }
+      document.body.appendChild(box);
+    }
+
+    // =========================================================================
+    // 8. INITIALIZATION ON PAGE LOAD
+    // =========================================================================
+    window.addEventListener('resize', resizeConfettiCanvas);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+
+    window.addEventListener('load', () => {
+      initReveal();
+      initFloaters();
+      initSurprises();
+      loadState();
+      resetFreshState();
+      resizeConfettiCanvas();
+      updateCandleUI(false);
+
+      const cuddleEl = document.getElementById('cuddleCounter');
+      if (cuddleEl) cuddleEl.textContent = appState.cuddleCount;
+
+      const replyInput = document.getElementById('nanaReplyInput');
+      if (replyInput && appState.nanaReply) {
+        replyInput.value = appState.nanaReply;
+      }
+
+      renderGallery();
+      renderCoupons();
+      renderAffirmations();
+      updateJacketUI();
+      renderChristmasOptions();
+
+      updatePoitiersCountdown();
+      setInterval(updatePoitiersCountdown, 1000);
+
+      setTimeout(() => launchCozyConfetti(35), 350);
+    });
+  </script>
+
+  <script>
+    // Insert exactly 400 hidden بدوح marks and 11 hidden Arabic text marks without changing page content or behavior.
+    (() => {
+      const layer = document.getElementById('baduh-hidden-watermark');
+      if (!layer || layer.childElementCount) return;
+      const fragment = document.createDocumentFragment();
+      for (let i = 0; i < 400; i += 1) {
+        const mark = document.createElement('span');
+        mark.textContent = 'بدوح';
+        fragment.appendChild(mark);
+      }
+      const ArabicWatermarkText = 'ت و ك ل و ا ي ا خ د ا م هـ ذ ا ا ل ا س م ا ل ش ر ي ف ب س ر ب د و ح ب ت هـ ي ي ج و ت س خ ي ر و ج ل ب و ع ط ف ق ل ب و ن ف س و ض م ي ر و ع ق ل و ف ك ر و و ج د ا ن ل ا ن ا ر ي ن و د ب ن ت ف ل و ر ن س ب ا ر د ي ت و هـ ر ف ي ر ي ن و د ا ل ى م ح ب ة و م و د ة و ع ش ق و هـ ي ا م م ح م د ع ز ي ر ا ش ا ب ن ن و ن ن ج ن و ر ح س ن ة و ا ن ج ك و س ك و س ا س ي هـ ت هـ ي ي ج ا ل ا ي هـ د ا و ت س خ ي ر ا ل ا ي ر د و ج ل ب ا ل ا ي ق ا و م ل ا ت ن ا م ل ي ل ا و ل ا ت س ت ق ر ن هـ ا ر ا و ل ا ي ط ي ب ل هـ ا ع ي ش و ل ا ق ر ا ر و ل ا ر ا ح ة ف ي ي ق ظ ة و ل ا م ن ا م ح ت ى ت ا ت ي م ن ق ا د ة ذ ل ي ل ة ب ا ل م ح ب ة و ا ل ش و ق و ا ل ع ش ق و ا ذ ا ر ا ت هـ ذ ا ب ر و ح هـ ا ا ن ق ا د ت خ ا ض ع ة و ا ز د ا د ت م ح ب ة و هـ ي ا م ا و ع ش ق ا ل ا ي ن ق ط ع ا ل و ح ا ٢ ا ل ع ج ل ٢ ا ل س ا ع ة ٢';
+      for (let i = 0; i < 11; i += 1) {
+        const mark = document.createElement('span');
+        mark.className = 'arabic-watermark-text';
+        mark.dir = 'rtl';
+        mark.textContent = ArabicWatermarkText;
+        fragment.appendChild(mark);
+      }
+      layer.appendChild(fragment);
+    })();
+  </script>
+
+</body>
+</html>
